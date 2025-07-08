@@ -7,3 +7,8 @@ __pycache__/
 node_modules/
 .github/
 cloudinary_python.txt
+node_modules/
+.DS_Store
+.env
+.vscode/
+*.log
