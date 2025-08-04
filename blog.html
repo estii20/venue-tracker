@@ -33,10 +33,11 @@
                     aria-hidden="true"></a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Blog</span>
-                    <span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Featured</span>
-                    <span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Guides</span>
-                    <span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Newsletter</span>
+                    <a href="index.html"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Home</span></a>
+                    <a href="blog.html"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Blog</span></a>
+                    <a href="#featured-posts"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Featured</span></a>
+                    <a href="#blog-categories"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Guides</span></a>
+                    <a href="#newsletter"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Newsletter</span></a>
                 </nav>
                 <button class="md:hidden">
                     <i class="fas fa-bars text-xl text-stone"></i>
@@ -82,7 +83,8 @@
                 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     <article id="featured-article-1" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8ad41b835c-adf924ae30abfbc97215.png" alt="Trieste coastal view with yoga practitioners, golden hour lighting, serene atmosphere" />
+                        <img class="w-full h-48 object-cover" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8ad41b835c-adf924ae30abfbc97215.png" alt="Trieste coastal view with yoga practitioners, golden hour lighting, serene atmosphere" />
                         <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Destination Guide</span>
@@ -90,7 +92,9 @@
                             </div>
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Why Trieste is the Ideal Yoga Retreat Destination</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Discover the unique blend of Italian, Slovenian, and Austrian influences that make Trieste perfect for transformative wellness experiences.</p>
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span>
+                            <a href="trieste_yoga_destination.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span>
+                            </a>
                         </div>
                     </article>
 
@@ -262,7 +266,7 @@
             <div class="max-w-6xl mx-auto">
                 <div class="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
-                        <div class="font-playfair text-2xl font-semibold mb-4">Bella Ritiri</div>
+                        <div class="font-playfair text-2xl font-semibold mb-4">Italian Retreat Venues</div>
                         <p class="text-sm opacity-75 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
                         <div class="flex space-x-4">
                             <i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i>
@@ -295,14 +299,14 @@
                         <h4 class="font-semibold mb-4">Contact</h4>
                         <ul class="space-y-2 text-sm opacity-75">
                             <li>Based in Monfalcone, Italy</li>
-                            <li>hello@bellaritiri.com</li>
+                            <li>helloretreatmatcher@gmail.com</li>
                             <li>+39 xxx xxx xxxx</li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="border-t border-cream/20 pt-8 text-center">
-                    <p class="text-sm opacity-75">© 2025 Bella Ritiri. All rights reserved.</p>
+                    <p class="text-sm opacity-75">© 2025 Italian Retreat Venues. All rights reserved.</p>
                 </div>
             </div>
         </div>
@@ -346,5 +350,6 @@
             });
         });
     </script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
