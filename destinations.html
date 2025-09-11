@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bespoke Luxury Retreat Venues in Italy, Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-inter { font-family: 'Inter', sans-serif; }
+        .text-sage { color: #87A96B; }
+        .bg-sage { background-color: #87A96B; }
+        .text-stone { color: #8B7355; }
+        .bg-stone { background-color: #8B7355; }
+        .bg-cream { background-color: #F7F5F0; }
+        .text-cream { color: #F7F5F0; }
+    </style>
+</head>
+<body class="font-inter text-gray-800">
+
+    <!-- Header -->
+    <header id="header" class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="font-playfair text-2xl font-semibold text-stone">
+                    <a href="index.html">
+                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
+                     width="100" height="200"
+                    aria-hidden="true"></a> 
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Home</span></a>
+                    <a href="blog.html"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Blog</span></a>
+                    <a href="#featured-posts"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Featured</span></a>
+                    <a href="#blog-categories"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Guides</span></a>
+                    <a href="#newsletter"><span class="text-gray-600 hover:text-sage transition-colors cursor-pointer cursor-pointer">Newsletter</span></a>
+                </nav>
+                <button class="md:hidden">
+                    <i class="fas fa-bars text-xl text-stone"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative h-[600px] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b4dc609433-7684878cee431f1f8fc1.png" alt="Italian coastline panorama with luxury villas, golden hour lighting, serene wellness destination" />
+            <div class="absolute inset-0 bg-black/30"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white max-w-4xl px-6">
+            <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Luxury Destinations
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto leading-relaxed">
+                Discover hand-picked retreat venues across Italy's most beautiful regions
+            </p>
+        </div>
+    </section>
+
+    <!-- Destination Categories -->
+    <section id="destination-categories" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">
+                    Explore by Region
+                </h2>
+                
+                <div class="grid md:grid-cols-3 gap-8 mb-16">
+                    <div id="region-friuli" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/13b8badde4-ad214d8fbce63ccff762.png" alt="Friuli Venezia Giulia landscape with mountains and vineyards, wellness retreat setting" />
+                        <div class="p-6">
+                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">Friuli Venezia Giulia</h3>
+                            <p class="text-gray-600 mb-4">Where Italian elegance meets Alpine serenity. Perfect for intimate retreats with mountain and vineyard views.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-sage font-medium">5 Venues</span>
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Explore →</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="region-tuscany" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3f86687fa5-b470fa5280aa8bc263ab.png" alt="Tuscany rolling hills with cypress trees, luxury villa retreat center" />
+                        <div class="p-6">
+                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">Tuscany</h3>
+                            <p class="text-gray-600 mb-4">Classic Italian beauty with rolling hills, historic villas, and world-renowned cuisine for transformative experiences.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-sage font-medium">3 Venues</span>
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Explore →</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="region-puglia" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/57e60515a3-b59db6e82964e8a6ce62.png" alt="Puglia coastline with trulli houses, Mediterranean wellness retreat" />
+                        <div class="p-6">
+                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">Puglia</h3>
+                            <p class="text-gray-600 mb-4">Authentic southern Italy with olive groves, traditional masserie, and crystal-clear Adriatic waters.</p>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-sage font-medium">2 Venues</span>
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Explore →</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section id="featured-destinations" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">
+                    Signature Venues
+                </h2>
+                
+                <div class="space-y-12">
+                    <div id="venue-tivoli" class="flex flex-col lg:flex-row gap-8 bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img class="w-full lg:w-1/2 h-64 lg:h-auto object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d7f9425d57-f968eb071580ffb22cfd.png" alt="Tivoli Portopiccolo luxury resort coastal view, modern spa architecture, Trieste" />
+                        <div class="p-8 lg:w-1/2">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Coastal Luxury</span>
+                                <span class="text-gray-500 text-sm ml-3">Sistiana, near Trieste</span>
+                            </div>
+                            <h3 class="font-playfair text-3xl font-semibold mb-4 text-stone">Tivoli Portopiccolo Sistiana</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">A stunning coastal wellness resort with panoramic Adriatic views, world-class spa facilities, and flexible spaces perfect for yoga retreats. Luxury meets tranquility just minutes from Trieste.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <h4 class="font-semibold text-stone mb-2">Capacity</h4>
+                                    <p class="text-sm text-gray-600">Large groups welcome</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-stone mb-2">Wellness</h4>
+                                    <p class="text-sm text-gray-600">Full spa, pools, beach club</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="venue-mandali" class="flex flex-col lg:flex-row-reverse gap-8 bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img class="w-full lg:w-1/2 h-64 lg:h-auto object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3f5d1e7326-a080b6c6f9ea5f1ea0d4.png" alt="Mandali Retreat Lake Orta alpine setting, yoga studio with mountain views" />
+                        <div class="p-8 lg:w-1/2">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Dedicated Retreat</span>
+                                <span class="text-gray-500 text-sm ml-3">Lake Orta, Piedmont</span>
+                            </div>
+                            <h3 class="font-playfair text-3xl font-semibold mb-4 text-stone">Mandali Retreat</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">A world-renowned retreat center nestled in the Italian Alps with breathtaking lake views. Multiple yoga studios, holistic treatments, and an atmosphere designed for deep transformation.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <h4 class="font-semibold text-stone mb-2">Studios</h4>
+                                    <p class="text-sm text-gray-600">Multiple indoor/outdoor</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-stone mb-2">Experience</h4>
+                                    <p class="text-sm text-gray-600">World-class teachers</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="venue-castello" class="flex flex-col lg:flex-row gap-8 bg-white rounded-lg overflow-hidden shadow-lg">
+                        <img class="w-full lg:w-1/2 h-64 lg:h-auto object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/6cacc55d3c-8e45b3f01ebcdf0bdff1.png" alt="Castello di Buttrio vineyard estate, historic architecture with yoga terrace" />
+                        <div class="p-8 lg:w-1/2">
+                            <div class="flex items-center mb-4">
+                                <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Historic Estate</span>
+                                <span class="text-gray-500 text-sm ml-3">Friuli Venezia Giulia</span>
+                            </div>
+                            <h3 class="font-playfair text-3xl font-semibold mb-4 text-stone">Castello di Buttrio</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">A beautifully restored castle surrounded by vineyards, offering panoramic views and authentic Italian elegance. Perfect for groups seeking history, culture, and exceptional wine experiences.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6">
+                                <div>
+                                    <h4 class="font-semibold text-stone mb-2">Setting</h4>
+                                    <p class="text-sm text-gray-600">Castle with vineyards</p>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-stone mb-2">Experience</h4>
+                                    <p class="text-sm text-gray-600">Wine tastings included</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue Types -->
+    <section id="venue-types" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">
+                    Find Your Perfect Match
+                </h2>
+                
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div id="type-dedicated" class="text-center p-6 bg-cream rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-om text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Dedicated Retreats</h3>
+                        <p class="text-gray-600 text-sm mb-4">Purpose-built centers with multiple studios and holistic facilities</p>
+                        <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Options →</span>
+                    </div>
+
+                    <div id="type-luxury" class="text-center p-6 bg-cream rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 bg-stone rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-crown text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Luxury Resorts</h3>
+                        <p class="text-gray-600 text-sm mb-4">High-end hotels with spa facilities and flexible event spaces</p>
+                        <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Options →</span>
+                    </div>
+
+                    <div id="type-historic" class="text-center p-6 bg-cream rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-castle text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Historic Estates</h3>
+                        <p class="text-gray-600 text-sm mb-4">Castles, villas, and palaces offering unique cultural experiences</p>
+                        <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Options →</span>
+                    </div>
+
+                    <div id="type-boutique" class="text-center p-6 bg-cream rounded-lg shadow-lg hover:shadow-xl transition-all duration-300">
+                        <div class="w-16 h-16 bg-stone rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-heart text-white text-2xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Boutique Venues</h3>
+                        <p class="text-gray-600 text-sm mb-4">Intimate spaces perfect for small groups and personalized experiences</p>
+                        <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Options →</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Features -->
+    <section id="key-features" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">
+                    What Makes Our Venues Special
+                </h2>
+                
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div id="feature-yoga" class="text-center">
+                        <div class="w-20 h-20 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-spa text-white text-3xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-semibold mb-4 text-stone">Yoga-Ready Spaces</h3>
+                        <p class="text-gray-600 leading-relaxed">All venues feature dedicated or adaptable spaces for yoga practice, with proper flooring, natural light, and peaceful surroundings.</p>
+                    </div>
+
+                    <div id="feature-wellness" class="text-center">
+                        <div class="w-20 h-20 bg-stone rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-leaf text-white text-3xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-semibold mb-4 text-stone">Wellness Focused</h3>
+                        <p class="text-gray-600 leading-relaxed">From spa facilities to healthy cuisine options, each venue supports your guests' wellbeing journey throughout their stay.</p>
+                    </div>
+
+                    <div id="feature-location" class="text-center">
+                        <div class="w-20 h-20 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
+                            <i class="fas fa-mountain text-white text-3xl"></i>
+                        </div>
+                        <h3 class="font-playfair text-2xl font-semibold mb-4 text-stone">Inspiring Locations</h3>
+                        <p class="text-gray-600 leading-relaxed">Carefully selected for their natural beauty and tranquil settings that enhance the retreat experience and create lasting memories.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta-section" class="py-20 bg-stone text-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold mb-8">
+                    Ready to Find Your Perfect Venue?
+                </h2>
+                <p class="text-xl mb-12 opacity-90">
+                    Let me help you discover the ideal Italian destination for your next wellness retreat.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <button class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
+                        Start Your Search
+                    </button>
+                    <button class="border-2 border-cream text-cream hover:bg-cream hover:text-stone px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
+                        View All Venues
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section id="newsletter" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-stone mb-8">
+                    Stay Inspired
+                </h2>
+                <p class="text-xl text-gray-600 mb-12">
+                    Get weekly insights, venue spotlights, and retreat planning tips delivered to your inbox.
+                </p>
+                
+                <form class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-2xl mx-auto">
+                    <div class="flex flex-col md:flex-row gap-4">
+                        <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-sage/50">
+                        <button type="submit" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300">
+                            Subscribe
+                        </button>
+                    </div>
+                    <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe anytime. Your privacy is protected.</p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-stone text-cream py-12">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="font-playfair text-2xl font-semibold mb-4">Italian Retreat Venues</div>
+                        <p class="text-sm opacity-75 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
+                        <div class="flex space-x-4">
+                            <i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            <i class="fab fa-facebook text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            <i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Blog Categories</h4>
+                        <ul class="space-y-2 text-sm opacity-75">
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Destination Guides</span></li>
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Venue Reviews</span></li>
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Planning Tips</span></li>
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Recommendations</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2 text-sm opacity-75">
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</span></li>
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</span></li>
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Local Support</span></li>
+                            <li><span class="hover:text-sage transition-colors cursor-pointer">Commission Setup</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2 text-sm opacity-75">
+                            <li>Based in Monfalcone, Italy</li>
+                            <li>helloretreatmatcher@gmail.com</li>
+                            <li>+39 xxx xxx xxxx</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-cream/20 pt-8 text-center">
+                    <p class="text-sm opacity-75">© 2025 Italian Retreat Venues. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white');
+                header.classList.remove('bg-white/90');
+            } else {
+                header.classList.add('bg-white/90');
+                header.classList.remove('bg-white');
+            }
+        });
+
+        // Article hover effects
+        document.querySelectorAll('article').forEach(article => {
+            article.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-4px)';
+            });
+            
+            article.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
