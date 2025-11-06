@@ -1,6 +1,6 @@
 # Luxury Italian Retreat Venues
 
-![Italian Retrea Venues](images\am_i_responsive_italian_retreat_venues.png)
+![Italian Retreat Venues](images/am_i_responsive_italian_retreat_venues.png)
 
 A professional website for a boutique venue sourcing service helping UK-based wellness coaches, yoga instructors, and retreat hosts find hand-picked luxury retreat venues in Italy.
 
