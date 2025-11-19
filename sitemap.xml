@@ -1,35 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <!-- Homepage -->
+
   <url>
     <loc>https://italianretreatvenues.online/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
-  <!-- Region pages (example) -->
-  <url>
-    <loc>https://italianretreatvenues.online/tuscany</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://italianretreatvenues.online/lake-como</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://italianretreatvenues.online/adler_lodge.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/affiliate.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/all_venues.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/blog.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/borgo_egnazia.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/collection.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/destinations.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/doubletree.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/eremito_hotelito.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/faloria_spa_resort.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/index.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/italian_menus.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/mandali_retreat_lake_orta.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/monastero_san_biagio_umbria.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/perfect_venue.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/planning.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/retreat_menus.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/setup.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/sunflower_retreat.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/tivoli_portopiccolo.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/top_five_destinations.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/trieste_yoga_destination.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/venue_selection.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/venues.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/verdura_resort.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/villa_oliveto.html</loc></url>
+  <url><loc>https://italianretreatvenues.online/yoga_props.html</loc></url>
 
-  <!-- Venue pages (example) -->
-  <url>
-    <loc>https://italianretreatvenues.online/venues/villa-paradiso</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://italianretreatvenues.online/venues/lake-como-lodge</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-
-  <!-- Add more venue or other pages here -->
 </urlset>
