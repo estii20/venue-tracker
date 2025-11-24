@@ -5,55 +5,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italian Retreat Venues: Luxury Locations for UK Wellness Professionals</title>
 
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Find your perfect Italian retreat venue. We curate luxury villas, resorts, and historic locations across Italy tailored for UK yoga and wellness groups.">
-    <meta name="keywords" content="luxury retreat venues Italy, yoga retreats Italy, Italian wellness locations, UK retreat organizer, Italy villas for hire">    
+    <meta name="keywords" content="luxury retreat venues Italy, yoga retreats Italy, Italian wellness locations, UK retreat organizer, Italy villas for hire">    
     <meta name="author" content="Italian Retreat Venues Team">
 
-    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Italian Retreat Venues: Luxury Locations for UK Wellness Professionals">
     <meta property="og:description" content="Find your perfect Italian retreat venue. We curate luxury villas, resorts, and historic locations across Italy tailored for UK yoga and wellness groups.">
     <meta property="og:image" content="https://italianretreatvenues.com/images/italian_retreat_venues_logo.png">
     <meta property="og:url" content="https://italianretreatvenues.com">
     <meta property="og:type" content="website">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Italian Retreat Venues: Luxury Locations for UK Wellness Professionals">
     <meta name="twitter:description" content="Find your perfect Italian retreat venue. We curate luxury villas, resorts, and historic locations across Italy tailored for UK yoga and wellness groups.">
     <meta name="twitter:image" content="https://italianretreatvenues.com/images/italian_retreat_venues_logo.png">
 
-    <!-- Favicon -->
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://italianretreatvenues.com">
 
-    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "Italian Retreat Venues",
-      "url": "https://italianretreatvenues.com",
-      "logo": "https://italianretreatvenues.com/images/italian_retreat_venues_logo.png",
-      "description": "Find your perfect Italian retreat venue. We curate luxury villas, resorts, and historic locations across Italy tailored for UK yoga and wellness groups.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+44 1234567890",
-        "email": "contact@italianretreatvenues.com",
-        "contactType": "customer service"
-      }
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Italian Retreat Venues",
+        "url": "https://italianretreatvenues.com",
+        "logo": "https://italianretreatvenues.com/images/italian_retreat_venues_logo.png",
+        "description": "Find your perfect Italian retreat venue. We curate luxury villas, resorts, and historic locations across Italy tailored for UK yoga and wellness groups.",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+44 1234567890",
+            "email": "contact@italianretreatvenues.com",
+            "contactType": "customer service"
+        }
     }
     </script>
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
-        ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
         .font-inter { font-family: 'Inter', sans-serif; }
         .text-sage { color: #87A96B; }
@@ -62,6 +55,22 @@
         .bg-stone { background-color: #8B7355; }
         .bg-cream { background-color: #F7F5F0; }
         .text-cream { color: #F7F5F0; }
+
+        .text-gray-800 { color: #1f2937; } 
+        .text-gray-600 { color: #4b5563; } 
+
+        /* Utility class for screen readers */
+        .sr-only { 
+            position: absolute; 
+            width: 1px; 
+            height: 1px; 
+            padding: 0; 
+            margin: -1px; 
+            overflow: hidden; 
+            clip: rect(0, 0, 0, 0); 
+            white-space: nowrap; 
+            border-width: 0; 
+        }
     </style>
 </head>
 <body class="font-inter text-gray-800">
@@ -71,9 +80,12 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -81,9 +93,9 @@
                     <a href="#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venues</a>
                     <a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
                     <a href="#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer" aria-label="Visit the Italian Retreat Venues Blog">Blog</a>
                 </nav>
-                <button class="md:hidden" id="openMenu">
+                <button class="md:hidden" id="openMenu" aria-label="Open mobile menu">
                     <i class="fas fa-bars text-xl text-stone"></i>
                 </button>
             </div>
@@ -92,9 +104,14 @@
 
     <section id="hero" class="relative h-[800px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" 
+            <img 
+            class="w-full h-full object-cover" 
             src="images/hero.png" 
-            alt="serene luxury villa in Tuscany with olive groves, golden hour lighting, minimalist architecture" />
+            alt="serene luxury villa in Tuscany with olive groves, golden hour lighting, minimalist architecture"
+            width="1920" 
+            height="1080" 
+            fetchpriority="high" /> 
+            
             <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
@@ -124,9 +141,13 @@
     
                 <div class="grid md:grid-cols-2 gap-12 items-center">
                     <div class="relative">
-                        <img class="w-full h-[32rem] object-cover rounded-lg shadow-lg"
+                        <img 
+                        class="w-full h-[32rem] object-cover rounded-lg shadow-lg"
                         src="images/estelle_yoga_retreat_manager.png" 
-                        alt="venue finder Estelle Specht in linen clothing standing in Italian countryside, warm natural lighting" />
+                        alt="venue finder Estelle Specht in linen clothing standing in Italian countryside, warm natural lighting"
+                        width="600" 
+                        height="800" 
+                        loading="lazy" />
                     </div>
                     <div class="space-y-6 text-left">
                         <p class="text-lg leading-relaxed">
@@ -154,7 +175,7 @@
                 <div class="grid md:grid-cols-3 gap-12">
                     <div class="text-center">
                         <div class="w-20 h-20 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-comments text-white text-2xl"></i>
+                            <i class="fas fa-comments text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-2xl font-semibold mb-4 text-stone">Share Your Vision</h3>
                         <p class="text-gray-600 leading-relaxed">
@@ -164,7 +185,7 @@
                     
                     <div class="text-center">
                         <div class="w-20 h-20 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-list-check text-white text-2xl"></i>
+                            <i class="fas fa-list-check text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-2xl font-semibold mb-4 text-stone">Venue Curation</h3>
                         <p class="text-gray-600 leading-relaxed">
@@ -174,7 +195,7 @@
                     
                     <div class="text-center">
                         <div class="w-20 h-20 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-handshake text-white text-2xl"></i>
+                            <i class="fas fa-handshake text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-2xl font-semibold mb-4 text-stone">Confirm & Connect</h3>
                         <p class="text-gray-600 leading-relaxed">
@@ -201,22 +222,23 @@
     <section id="venues" class="py-20 bg-cream">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
-                <h1 class="font-playfair text-5xl md:text-6xl font-bold text-center text-stone mb-4 leading-tight">
+                <h2 class="font-playfair text-5xl md:text-6xl font-bold text-center text-stone mb-4 leading-tight">
                     Luxury Italian Retreat Venues for Wellness
-                </h1>
-                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">
-                    A Glimpse of What's Possible
                 </h2>
+                <h3 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">
+                    A Glimpse of What's Possible
+                </h3>
     
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img class="w-full h-64 object-cover" 
                             src="images/Villa_Oliveto-min.jpg" 
-                            alt="Villa Oliveto, luxury villa in Le Marche with infinity pool" />
+                            alt="Villa Oliveto, luxury villa in Le Marche with infinity pool"
+                            width="400" height="256" loading="lazy" />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Villa Oliveto – Le Marche</h3>
                             <p class="text-gray-600 mb-4">Tranquil hilltop estate with private spa, infinity pool, and panoramic studio.</p>
-                            <a href="villa_oliveto.html">
+                            <a href="villa_oliveto.html" aria-label="Explore Villa Oliveto Venue Details">
                                 <button class="text-sage hover:text-sage/80 font-medium">Explore Venue →</button></a>
                         </div>
                     </div>
@@ -224,23 +246,25 @@
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img class="w-full h-64 object-cover" 
                             src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-4.webp?bwg=1739833509" 
-                            alt="Mandali Retreat Center, Lake Orta, with mountain view yoga deck" />
+                            alt="Mandali Retreat Center, Lake Orta, with mountain view yoga deck"
+                            width="400" height="256" loading="lazy" />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Mandali Retreat – Lake Orta</h3>
                             <p class="text-gray-600 mb-4">A serene alpine sanctuary for deep transformation.</p>
-                            <a href="mandali_retreat_lake_orta.html">
+                            <a href="mandali_retreat_lake_orta.html" aria-label="Explore Mandali Retreat Lake Orta Venue Details">
                                 <button class="text-sage hover:text-sage/80 font-medium">Explore Venue →</button></a>
                         </div>
                     </div>
     
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img class="w-full h-64 object-cover" 
-                        src="images/faloria-min.jpg" 
-                        alt="luxury spa resort in Dolomites with mountain backdrop" />
+                            src="images/faloria-min.jpg" 
+                            alt="luxury spa resort in Dolomites with mountain backdrop"
+                            width="400" height="256" loading="lazy" />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Faloria Spa Resort – Dolomites</h3>
                             <p class="text-gray-600 mb-4">Modern luxury meets mountain magic. Ideal for winter yoga or slow retreats.</p>
-                            <a href="faloria_spa_resort.html">
+                            <a href="faloria_spa_resort.html" aria-label="Explore Faloria Spa Resort Venue Details">
                                 <button class="text-sage hover:text-sage/80 font-medium">Explore Venue →</button></a>
                         </div>
                     </div>
@@ -248,42 +272,45 @@
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img class="w-full h-64 object-cover" 
                             src="images/tivoli-min.png" 
-                            alt="coastal luxury resort near Trieste with sea views" />
+                            alt="coastal luxury resort near Trieste with sea views"
+                            width="400" height="256" loading="lazy" />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Tivoli Portopiccolo</h3>
                             <p class="text-sage font-medium mb-3">Sistiana, Trieste</p>
                             <p class="text-gray-600 mb-4">Stunning coastal wellness resort with comprehensive spa facilities.</p>
-                            <a href="tivoli_portopiccolo.html">
+                            <a href="tivoli_portopiccolo.html" aria-label="Explore Tivoli Portopiccolo Venue Details">
                             <button class="text-sage hover:text-sage/80 font-medium">Explore Venue →</button></a>
                         </div>
                     </div>
     
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img class="w-full h-64 object-cover" 
-                        src="images/san_biagio-min.jpg" 
-                        alt="Monastero San Biagio, historic villa in Umbria with vineyards" />
+                            src="images/san_biagio-min.jpg" 
+                            alt="Monastero San Biagio, historic villa in Umbria with vineyards"
+                            width="400" height="256" loading="lazy" />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Monastero San Biagio, Umbria</h3>
                             <p class="text-gray-600 mb-4">Monastero San Biagio is a beautifully restored 14th-century monastery nestled in the tranquil Umbrian countryside.</p>
-                            <a href="monastero_san_biagio_umbria.html">
+                            <a href="monastero_san_biagio_umbria.html" aria-label="Explore Monastero San Biagio Venue Details">
                                 <button class="text-sage hover:text-sage/80 font-medium">Explore Venue →</button></a>
                         </div>
                     </div>
     
                     <div class="bg-white rounded-lg shadow-lg overflow-hidden">
                         <img class="w-full h-64 object-cover" 
-                        src="images/vedura-min.jpg" 
-                        alt="Vedura Resort Sicily agriturismo in Sicily with olive groves and sea proximity" />
+                            src="images/vedura-min.jpg" 
+                            alt="Vedura Resort Sicily agriturismo in Sicily with olive groves and sea proximity"
+                            width="400" height="256" loading="lazy" />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Vedura Resort – Sicily</h3>
                             <p class="text-gray-600 mb-4">Secluded Sicilian farm estate, perfect for immersive cultural and culinary retreats.</p>
-                            <a href="verdura_resort.html">
+                            <a href="verdura_resort.html" aria-label="Explore Verdura Resort Sicily Venue Details">
                                 <button class="text-sage hover:text-sage/80 font-medium">Explore Venue →</button></a>
                         </div>
                     </div>
-                    </div>
-                    <div class="text-center mt-16">
-                        <a href="all_venues.html" class="inline-block">
+                </div>
+                <div class="text-center mt-16">
+                    <a href="all_venues.html" class="inline-block" aria-label="View all venues and locations">
                     <span class="bg-stone hover:bg-stone/90 text-white px-10 py-5 rounded-full text-xl font-medium transition-all duration-300 transform hover:scale-105">
                         More Venues →
                     </span>
@@ -302,7 +329,9 @@
                     <div class="bg-cream p-8 rounded-lg">
                         <div class="flex items-center mb-4">
                             <img src="images/emma-min.jpg" 
-                            alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                alt="Emma Richardson, Yoga Teacher from London" 
+                                class="w-12 h-12 rounded-full mr-4"
+                                width="48" height="48" loading="lazy">
                             <div>
                                 <h4 class="font-semibold text-stone">Emma Richardson</h4>
                                 <p class="text-sage text-sm">Yoga Teacher, London</p>
@@ -318,7 +347,9 @@
                     <div class="bg-cream p-8 rounded-lg">
                         <div class="flex items-center mb-4">
                             <img src="images/sophie-min.jpg" 
-                            alt="Client" class="w-12 h-12 rounded-full mr-4">
+                                alt="Sophie Chen, Wellness Coach from Manchester" 
+                                class="w-12 h-12 rounded-full mr-4"
+                                width="48" height="48" loading="lazy">
                             <div>
                                 <h4 class="font-semibold text-stone">Sophie Chen</h4>
                                 <p class="text-sage text-sm">Wellness Coach, Manchester</p>
@@ -343,7 +374,6 @@
             <p class="text-center text-lg text-gray-600 mb-12">
               Ready to explore luxury venues for your next retreat? I'll guide you every step of the way.
             </p>
-            <!-- CTA Button to trigger Tally popup -->
             <div class="text-center mt-12">
                 <button
                   data-tally-open="3x8L9G"
@@ -359,7 +389,6 @@
         </div>
     </section>
 
-    <!-- Instagram -->
     <section id="instagram" class="py-16 bg-white">
         <div class="container mx-auto px-6 text-center">
             <h3 class="font-playfair text-3xl font-semibold text-stone mb-8">Follow Along for Inspiration</h3>
@@ -367,46 +396,49 @@
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/italian_villa_sunlight-min.png" 
-                    alt="Italian villa courtyard with morning light" />
+                    alt="Italian villa courtyard with morning light"
+                    width="96" height="96" loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/tuscan_yoga_class-min.png" 
-                    alt="yoga class in Tuscan olive grove" />
+                    alt="yoga class in Tuscan olive grove"
+                    width="96" height="96" loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/spa_treatment_room-min.png" 
-                    alt="luxury spa treatment room in Italy" />
+                    alt="luxury spa treatment room in Italy"
+                    width="96" height="96" loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/sunset_view-min.png" 
-                    alt="Italian countryside sunset view" />
+                    alt="Italian countryside sunset view"
+                    width="96" height="96" loading="lazy" />
                 </div>
             </div>
-            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer" aria-label="Follow Italian Retreat Venues on Instagram">
                 <button class="bg-stone hover:bg-stone/90 text-white px-6 py-3 rounded-full font-medium transition-all duration-300">
-                    <i class="fab fa-instagram mr-2"></i>Follow on Instagram
+                    <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Follow on Instagram
                 </button>
             </a>
         </div>
     </section>
 
-    <!-- Blog -->
     <section id="blog" class="py-20 bg-cream">
         <div class="container mx-auto px-6 text-center">
           <h2 class="text-3xl md:text-4xl font-bold text-stone mb-4">Retreat Planning Resources</h2>
           <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Guides, venue checklists, and affiliate tips to help you plan the perfect retreat.
           </p>
-          <a href="blog.html">
+          <a href="blog.html" aria-label="Explore the Retreat Planning Blog">
             <button class="bg-stone hover:bg-stone/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
-              <i class="fa-solid fa-book-open mr-2"></i> Explore the Blog
+              <i class="fa-solid fa-book-open mr-2" aria-hidden="true"></i> Explore the Blog
             </button>
           </a>
         </div>
-      </section>      
+      </section>      
 
     <footer id="footer" class="bg-stone text-cream py-12">
         <div class="container mx-auto px-6">
@@ -414,45 +446,49 @@
                 <div class="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
                         <div class="font-playfair text-2xl font-semibold mb-4">Italian Retreat Venues</div>
-                        <p class="text-sm opacity-75 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
+                        <p class="text-sm opacity-90 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
                         <div class="flex space-x-4">
-                            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i></a>
-                            <a href="mailto:helloretreatmatcher@gmail.com"><i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i></a>
+                            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            </a>
+                            <a href="mailto:helloretreatmatcher@gmail.com" aria-label="Email Us">
+                                <i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            </a>
                         </div>
                     </div>
                     
                     <div>
                         <h4 class="font-semibold mb-4">Blog Categories</h4>
-                        <ul class="space-y-2 text-sm opacity-75">
-                            <a href="destinations.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Destination Guides</span></li></a>
-                            <a href="venues.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Venue Reviews</span></li></a>
-                            <a href="planning.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Planning Tips</span></li></a>
-                            <a href="affiliate.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Recommendations</span></li></a>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="destinations.html" class="hover:text-sage transition-colors cursor-pointer">Destination Guides</a></li>
+                            <li><a href="venues.html" class="hover:text-sage transition-colors cursor-pointer">Venue Reviews</a></li>
+                            <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Planning Tips</a></li>
+                            <li><a href="affiliate.html" class="hover:text-sage transition-colors cursor-pointer">Recommendations</a></li>
                         </ul>
                     </div>
                     
                     <div>
                         <h4 class="font-semibold mb-4">Services</h4>
-                        <ul class="space-y-2 text-sm opacity-75">
-                            <a href="index.html#how-it-works"><li><span class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</span></li></a>     
-                            <a href="planning.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</span></li></a> 
-                            <a href="setup.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Commission Setup</span></li></a>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="index.html#how-it-works" class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</a></li>     
+                            <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</a></li> 
+                            <li><a href="setup.html" class="hover:text-sage transition-colors cursor-pointer">Commission Setup</a></li>
                         </ul>
                     </div>
                     
                     <div>
                         <h4 class="font-semibold mb-4">Contact</h4>
-                        <ul class="space-y-2 text-sm opacity-75">
+                        <ul class="space-y-2 text-sm opacity-90">
                             <li>Based in Monfalcone, Italy</li>
-                            <a href="mailto:helloretreatmatcher@gmail.com"><li>helloretreatmatcher@gmail.com</li></a>
+                            <li><a href="mailto:helloretreatmatcher@gmail.com" class="hover:text-sage transition-colors cursor-pointer">helloretreatmatcher@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="border-t border-cream/20 pt-8 text-center">
-                    <p class="text-sm opacity-75">© 2025 Italian Retreat Venues. All rights reserved.
+                    <p class="text-sm opacity-90">© 2025 Italian Retreat Venues. All rights reserved.
                     </p>
-                    <p class="text-sm opacity-75">Designed by 
+                    <p class="text-sm opacity-90">Designed by 
                             <a href="https://www.pixelperfect-ux.store/" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
@@ -468,7 +504,7 @@
         <div class="bg-white h-full w-64 p-6 shadow-lg">
             <div class="flex justify-between items-center mb-8">
                 <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
-                <button class="text-stone" id="closeMenu">
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
                     <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
@@ -482,6 +518,11 @@
         </div>
     </div>
 
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -541,24 +582,6 @@
         document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
         document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
 
-    </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
-
-    <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Organization",
-            "name": "Italian Retreat Venues",
-            "url": "https://italianretreatvenues.com",
-            "logo": "https://italianretreatvenues.com/images/italian_retreat_venues_logo.png",
-            "description": "Find your perfect Italian retreat venue. We curate luxury villas, resorts, and historic locations across Italy tailored for UK yoga and wellness groups.",
-            "contactPoint": {
-                "@type": "ContactPoint",
-                "telephone": "+44 1234567890",
-                "email": "contact@italianretreatvenues.com",
-                "contactType": "customer service"
-            }
-        }
     </script>
 </body>
 </html>
