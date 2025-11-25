@@ -5,35 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italian Retreat Venues: Adler Lodge Ritten South Tyrol alpine luxury lodge</title>
 
-    <!-- SEO Meta Tags -->
     <meta name="description" content="Adler Lodge Ritten is a luxurious alpine lodge in South Tyrol, Italy. It offers a private retreat with a private garden, a private pool, and a private spa.">
     <meta name="keywords" content="Adler Lodge Ritten, South Tyrol, Italy, luxury lodge, alpine retreat, private retreat, private garden, private pool, private spa">
     <meta name="author" content="Italian Retreat Venues Team">
 
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Italian Retreat Venues: Adler Lodge Ritten South Tyrol alpine luxury lodge">
     <meta name="twitter:description" content="Adler Lodge Ritten is a luxurious alpine lodge in South Tyrol, Italy. It offers a private retreat with a private garden, a private pool, and a private spa.">
-    <meta name="twitter:image" content="https://italianretreatvenues.com/images/adler_lodge.jpg">
+    <meta name="twitter:image" content="https://italianretreatvenues.com/images/alder/adler_hero-min.png">
 
-    <!-- Open Graph (Facebook, LinkedIn) -->
     <meta property="og:title" content="Italian Retreat Venues: Adler Lodge Ritten South Tyrol alpine luxury lodge">
     <meta property="og:description" content="Adler Lodge Ritten is a luxurious alpine lodge in South Tyrol, Italy. It offers a private retreat with a private garden, a private pool, and a private spa.">
-    <meta property="og:image" content="https://italianretreatvenues.com/images/adler_lodge.jpg">
+    <meta property="og:image" content="https://italianretreatvenues.com/images/alder/adler_hero-min.png">
     <meta property="og:url" content="https://italianretreatvenues.com/adler_lodge.html">
     <meta property="og:type" content="website">
 
-    <!-- Canonical -->
     <link rel="canonical" href="https://italianretreatvenues.com/adler_lodge.html">
 
-    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LodgingBusiness",
       "name": "Adler Lodge Ritten",
       "description": "Adler Lodge Ritten is a luxurious alpine lodge in South Tyrol, Italy. It offers a private retreat with a private garden, a private pool, and a private spa.",
-      "image": "https://italianretreatvenues.com/images/adler_lodge.jpg",
+      "image": "https://italianretreatvenues.com/images/alder/adler_hero-min.png",
       "url": "https://italianretreatvenues.com/adler_lodge.html",
       "address": {
         "@type": "PostalAddress",
@@ -55,13 +50,11 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
-    <!-- ✅ Favicon -->
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -76,16 +69,16 @@
 </head>
 <body class="font-inter text-gray-800">
 
-    <!-- Header -->
-
     <header id="header" class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                    <img src="images/italian_retreat_venues_logo.png" 
+                        alt="Italian Retreat Venues Logo - Home Link"
+                        width="100" 
+                        height="40">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -95,26 +88,26 @@
                     <a href="index.html#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
                     <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
                 </nav>
-                <button class="md:hidden" id="openMenu">
+                <button class="md:hidden" id="openMenu" aria-label="Open mobile menu">
                     <i class="fas fa-bars text-xl text-stone"></i>
                 </button>
             </div>
         </div>
     </header>
-   
-<!-- Hero Section -->
-    <section id="hero" class="relative h-[700px] flex items-center justify-center overflow-hidden">
+    
+<section id="hero" class="relative h-[700px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img class="w-full h-full object-cover" 
                 src="images/alder/adler_hero-min.png" 
-                alt="Adler Lodge Ritten South Tyrol alpine luxury lodge mountain views wooden architecture snow peaks" />
+                alt="Adler Lodge Ritten South Tyrol alpine luxury lodge mountain views wooden architecture snow peaks"
+                width="1920"
+                height="700"
+                fetchpriority="high"
+                />
             <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
         <div class="relative z-10 text-center text-white max-w-5xl px-6">
-            <div class="mb-6">
-                <span class="bg-sage/90 text-white px-6 py-2 rounded-full text-sm font-medium">Alpine Luxury Lodge</span>
-            </div>
             <h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 Adler Lodge Ritten
             </h1>
@@ -136,28 +129,27 @@
         </div>
     </section>
 
-    <!-- Quick Info Bar -->
     <section id="quick-info" class="bg-white py-8 border-b border-gray-100">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                     <div class="flex flex-col items-center">
-                        <i class="fas fa-mountain text-2xl text-sage mb-2"></i>
+                        <i class="fas fa-mountain text-2xl text-sage mb-2" aria-hidden="true"></i>
                         <span class="text-sm text-gray-500">Location</span>
                         <span class="font-medium text-stone">South Tyrol, Italy</span>
                     </div>
                     <div class="flex flex-col items-center">
-                        <i class="fas fa-users text-2xl text-sage mb-2"></i>
+                        <i class="fas fa-users text-2xl text-sage mb-2" aria-hidden="true"></i>
                         <span class="text-sm text-gray-500">Capacity</span>
                         <span class="font-medium text-stone">Up to 40 guests</span>
                     </div>
                     <div class="flex flex-col items-center">
-                        <i class="fas fa-spa text-2xl text-sage mb-2"></i>
+                        <i class="fas fa-spa text-2xl text-sage mb-2" aria-hidden="true"></i>
                         <span class="text-sm text-gray-500">Wellness</span>
                         <span class="font-medium text-stone">Full Spa & Yoga</span>
                     </div>
                     <div class="flex flex-col items-center">
-                        <i class="fas fa-plane text-2xl text-sage mb-2"></i>
+                        <i class="fas fa-plane text-2xl text-sage mb-2" aria-hidden="true"></i>
                         <span class="text-sm text-gray-500">Airport</span>
                         <span class="font-medium text-stone">Bolzano 45min</span>
                     </div>
@@ -166,7 +158,6 @@
         </div>
     </section>
 
-    <!-- Overview Section -->
     <section id="overview" class="py-20 bg-cream">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
@@ -176,26 +167,26 @@
                             Alpine Wellness Sanctuary
                         </h2>
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
-                            Nestled in the breathtaking landscape of South Tyrol, Adler Lodge Ritten offers an unparalleled alpine wellness experience. This luxury lodge combines traditional mountain architecture with contemporary comfort, creating the perfect setting for transformative yoga retreats.
+                            Nestled in the breathtaking landscape of South Tyrol, **Adler Lodge Ritten** offers an unparalleled alpine wellness experience. This luxury lodge combines traditional mountain architecture with contemporary comfort, creating the perfect setting for transformative yoga retreats.
                         </p>
                         <p class="text-lg text-gray-700 mb-8 leading-relaxed">
                             The lodge's elevated position provides panoramic views of the Dolomites while offering complete tranquility away from urban distractions. With dedicated wellness facilities and authentic mountain hospitality, it's an ideal venue for UK yoga instructors seeking an immersive alpine experience.
                         </p>
                         <div class="grid grid-cols-2 gap-6 mb-8">
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-sage mr-3"></i>
+                                <i class="fas fa-check-circle text-sage mr-3" aria-hidden="true"></i>
                                 <span class="text-gray-700">Dedicated yoga studio</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-sage mr-3"></i>
+                                <i class="fas fa-check-circle text-sage mr-3" aria-hidden="true"></i>
                                 <span class="text-gray-700">Outdoor meditation spaces</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-sage mr-3"></i>
+                                <i class="fas fa-check-circle text-sage mr-3" aria-hidden="true"></i>
                                 <span class="text-gray-700">Panoramic mountain views</span>
                             </div>
                             <div class="flex items-center">
-                                <i class="fas fa-check-circle text-sage mr-3"></i>
+                                <i class="fas fa-check-circle text-sage mr-3" aria-hidden="true"></i>
                                 <span class="text-gray-700">Organic local cuisine</span>
                             </div>
                         </div>
@@ -203,14 +194,17 @@
                     <div class="space-y-4">
                         <img class="w-full h-64 object-cover rounded-lg shadow-lg" 
                         src="images/alder/adler_interior-min.png" 
-                        alt="Adler Lodge Ritten interior wooden beams luxury alpine design cozy lounge fireplace" />
+                        alt="Adler Lodge Ritten interior wooden beams luxury alpine design cozy lounge fireplace"
+                        width="600" height="256" loading="lazy" />
                         <div class="grid grid-cols-2 gap-4">
                             <img class="w-full h-32 object-cover rounded-lg shadow-lg" 
                             src="images/alder/adler_meditation-min.png" 
-                            alt="Adler Lodge Ritten meditation studio wooden floors mountain views meditation space" />
+                            alt="Adler Lodge Ritten meditation studio wooden floors mountain views meditation space"
+                            width="300" height="128" loading="lazy" />
                             <img class="w-full h-32 object-cover rounded-lg shadow-lg" 
                             src="images/alder/adler_spa-min.png" 
-                            alt="Adler Lodge Ritten spa wellness area sauna relaxation alpine luxury" />
+                            alt="Adler Lodge Ritten spa wellness area sauna relaxation alpine luxury"
+                            width="300" height="128" loading="lazy" />
                         </div>
                     </div>
                 </div>
@@ -218,7 +212,6 @@
         </div>
     </section>
 
-    <!-- Facilities Section -->
     <section id="facilities" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
@@ -229,7 +222,7 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     <div id="yoga-studio" class="bg-cream rounded-lg p-8 text-center">
                         <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-om text-white text-2xl"></i>
+                            <i class="fas fa-om text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-xl font-semibold mb-4 text-stone">Dedicated Yoga Studio</h3>
                         <p class="text-gray-600 leading-relaxed">Spacious studio with traditional wooden floors, floor-to-ceiling windows, and mountain views. Fully equipped with mats, blocks, and props.</p>
@@ -237,7 +230,7 @@
 
                     <div id="spa-wellness" class="bg-cream rounded-lg p-8 text-center">
                         <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-spa text-white text-2xl"></i>
+                            <i class="fas fa-spa text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-xl font-semibold mb-4 text-stone">Alpine Spa</h3>
                         <p class="text-gray-600 leading-relaxed">Traditional Finnish sauna, steam room, and relaxation areas. Professional massage therapists available for individual treatments.</p>
@@ -245,7 +238,7 @@
 
                     <div id="outdoor-spaces" class="bg-cream rounded-lg p-8 text-center">
                         <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-tree text-white text-2xl"></i>
+                            <i class="fas fa-tree text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-xl font-semibold mb-4 text-stone">Nature Spaces</h3>
                         <p class="text-gray-600 leading-relaxed">Multiple outdoor terraces and garden areas perfect for sunrise yoga, meditation, and forest bathing sessions.</p>
@@ -253,7 +246,7 @@
 
                     <div id="dining" class="bg-cream rounded-lg p-8 text-center">
                         <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-utensils text-white text-2xl"></i>
+                            <i class="fas fa-utensils text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-xl font-semibold mb-4 text-stone">Organic Cuisine</h3>
                         <p class="text-gray-600 leading-relaxed">Farm-to-table dining featuring local, organic ingredients. Vegetarian and vegan options with dietary requirements accommodated.</p>
@@ -261,7 +254,7 @@
 
                     <div id="accommodation" class="bg-cream rounded-lg p-8 text-center">
                         <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-bed text-white text-2xl"></i>
+                            <i class="fas fa-bed text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-xl font-semibold mb-4 text-stone">Luxury Rooms</h3>
                         <p class="text-gray-600 leading-relaxed">Comfortable alpine-style rooms with mountain views, private bathrooms, and traditional wooden furnishings for a peaceful retreat experience.</p>
@@ -269,7 +262,7 @@
 
                     <div id="activities" class="bg-cream rounded-lg p-8 text-center">
                         <div class="w-16 h-16 bg-sage rounded-full flex items-center justify-center mx-auto mb-6">
-                            <i class="fas fa-hiking text-white text-2xl"></i>
+                            <i class="fas fa-hiking text-white text-2xl" aria-hidden="true"></i>
                         </div>
                         <h3 class="font-playfair text-xl font-semibold mb-4 text-stone">Mountain Activities</h3>
                         <p class="text-gray-600 leading-relaxed">Guided hiking trails, nature walks, and seasonal activities like snowshoeing. Perfect for active wellness programs.</p>
@@ -279,7 +272,6 @@
         </div>
     </section>
 
-    <!-- Gallery Section -->
     <section id="gallery" class="py-20 bg-cream">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
@@ -291,31 +283,36 @@
                     <div class="lg:col-span-2">
                         <img class="w-full h-80 object-cover rounded-lg shadow-xl" 
                         src="images/alder/adler_snow-min.png" 
-                        alt="Adler Lodge Ritten exterior winter snow mountain backdrop alpine luxury architecture" />
+                        alt="Adler Lodge Ritten exterior winter snow mountain backdrop alpine luxury architecture" 
+                        width="800" height="320" loading="lazy"/>
                     </div>
                     <div class="space-y-6">
                         <img class="w-full h-36 object-cover rounded-lg shadow-lg" 
                         src="images/alder/adler_breakfast-min.png" 
-                        alt="Adler Lodge Ritten dining room organic breakfast mountain views wooden tables" />
+                        alt="Adler Lodge Ritten dining room organic breakfast mountain views wooden tables" 
+                        width="400" height="144" loading="lazy"/>
                         <img class="w-full h-36 object-cover rounded-lg shadow-lg" 
-                        src="images/alder/adler_room-min.png" 
-                            alt="Adler Lodge Ritten bedroom alpine style luxury linens mountain views" />
+                            src="images/alder/adler_room-min.png" 
+                            alt="Adler Lodge Ritten bedroom alpine style luxury linens mountain views" 
+                            width="400" height="144" loading="lazy"/>
                     </div>
                     <img class="w-full h-64 object-cover rounded-lg shadow-lg" 
                     src="images/alder/adler_sunrise-min.png" 
-                    alt="Adler Lodge Ritten outdoor terrace yoga platform sunrise mountain meditation" />
+                    alt="Adler Lodge Ritten outdoor terrace yoga platform sunrise mountain meditation" 
+                    width="400" height="256" loading="lazy"/>
                     <img class="w-full h-64 object-cover rounded-lg shadow-lg" 
-                    src="images/alder/adler_spa_mountain_view-min.png"    
-                    alt="Adler Lodge Ritten spa relaxation area mountain stone design luxury wellness" />
+                    src="images/alder/adler_spa_mountain_view-min.png"     
+                    alt="Adler Lodge Ritten spa relaxation area mountain stone design luxury wellness" 
+                    width="400" height="256" loading="lazy"/>
                     <img class="w-full h-64 object-cover rounded-lg shadow-lg" 
-                    src="images/alder/adler_trail-min.png"    
-                        alt="Adler Lodge Ritten hiking trail forest path mountain wellness nature experience" />
+                    src="images/alder/adler_trail-min.png"     
+                        alt="Adler Lodge Ritten hiking trail forest path mountain wellness nature experience" 
+                        width="400" height="256" loading="lazy"/>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Retreat Packages -->
     <section id="packages" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
@@ -332,27 +329,27 @@
                             </div>
                             <div class="space-y-4 mb-8">
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">2 nights accommodation</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">6 yoga sessions</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">All organic meals</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Spa access</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Guided nature walk</span>
                                 </div>
                             </div>
-                            <a href="index.html#contact">
+                            <a href="index.html#contact" aria-label="Request a quote for the Weekend Retreat package">
                             <button class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300">
                                 Request Quote
                             </button>
@@ -368,31 +365,31 @@
                             </div>
                             <div class="space-y-4 mb-8">
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-white mr-3"></i>
+                                    <i class="fas fa-check text-white mr-3" aria-hidden="true"></i>
                                     <span>6 nights accommodation</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-white mr-3"></i>
+                                    <i class="fas fa-check text-white mr-3" aria-hidden="true"></i>
                                     <span>14 yoga sessions</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-white mr-3"></i>
+                                    <i class="fas fa-check text-white mr-3" aria-hidden="true"></i>
                                     <span>All meals included</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-white mr-3"></i>
+                                    <i class="fas fa-check text-white mr-3" aria-hidden="true"></i>
                                     <span>Daily spa treatments</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-white mr-3"></i>
+                                    <i class="fas fa-check text-white mr-3" aria-hidden="true"></i>
                                     <span>Multiple hiking excursions</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-white mr-3"></i>
+                                    <i class="fas fa-check text-white mr-3" aria-hidden="true"></i>
                                     <span>Meditation workshops</span>
                                 </div>
                             </div>
-                            <a href="index.html#contact">
+                            <a href="index.html#contact" aria-label="Request a quote for the 7-Day Immersion package">
                             <button class="w-full bg-white text-sage hover:bg-gray-50 py-3 rounded-full font-medium transition-all duration-300">
                                 Request Quote
                             </button>
@@ -408,27 +405,27 @@
                             </div>
                             <div class="space-y-4 mb-8">
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Tailored duration</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Bespoke program</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Group size flexibility</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Special dietary needs</span>
                                 </div>
                                 <div class="flex items-center">
-                                    <i class="fas fa-check text-sage mr-3"></i>
+                                    <i class="fas fa-check text-sage mr-3" aria-hidden="true"></i>
                                     <span class="text-gray-700">Additional activities</span>
                                 </div>
                             </div>
-                            <a href="index.html#contact">
+                            <a href="index.html#contact" aria-label="Discuss options for a Custom Retreat package">
                             <button class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300">
                                 Discuss Options
                             </button>
@@ -441,8 +438,6 @@
     </section>
 
 
-    <!-- Contact -->
-
     <section id="contact" class="py-20 bg-cream">
         <div class="container mx-auto px-6">
           <div class="max-w-4xl mx-auto">
@@ -452,7 +447,6 @@
             <p class="text-center text-lg text-gray-600 mb-12">
               Ready to explore luxury venues for your next retreat? I'll guide you every step of the way.
             </p>
-            <!-- CTA Button to trigger Tally popup -->
             <div class="text-center mt-12">
                 <button
                   data-tally-open="3x8L9G"
@@ -468,7 +462,6 @@
         </div>
       </section>
 
-    <!-- Instagram -->
     <section id="instagram" class="py-16 bg-white">
         <div class="container mx-auto px-6 text-center">
             <h3 class="font-playfair text-3xl font-semibold text-stone mb-8">Follow Along for Inspiration</h3>
@@ -476,48 +469,49 @@
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/italian_villa_sunlight-min.png" 
-                    alt="Italian villa courtyard with morning light" />
+                    alt="Italian villa courtyard with morning light"
+                    width="96" height="96" loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/tuscan_yoga_class-min.png" 
-                    alt="yoga class in Tuscan olive grove" />
+                    alt="yoga class in Tuscan olive grove"
+                    width="96" height="96" loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/spa_treatment_room-min.png" 
-                    alt="luxury spa treatment room in Italy" />
+                    alt="luxury spa treatment room in Italy"
+                    width="96" height="96" loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
                     src="images/sunset_view-min.png" 
-                    alt="Italian countryside sunset view" />
+                    alt="Italian countryside sunset view"
+                    width="96" height="96" loading="lazy" />
                 </div>
             </div>
-            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer" aria-label="Follow Italian Retreat Venues on Instagram">
                 <button class="bg-stone hover:bg-stone/90 text-white px-6 py-3 rounded-full font-medium transition-all duration-300">
-                    <i class="fab fa-instagram mr-2"></i>Follow on Instagram
+                    <i class="fab fa-instagram mr-2" aria-hidden="true"></i>Follow on Instagram
                 </button>
             </a>
         </div>
     </section>
 
-    <!-- Blog -->
     <section id="blog" class="py-20 bg-cream">
         <div class="container mx-auto px-6 text-center">
           <h2 class="text-3xl md:text-4xl font-bold text-stone mb-4">Retreat Planning Resources</h2>
           <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
             Guides, venue checklists, and affiliate tips to help you plan the perfect retreat.
           </p>
-          <a href="blog.html">
+          <a href="blog.html" aria-label="Explore the Retreat Planning Blog">
             <button class="bg-stone hover:bg-stone/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
-              <i class="fa-solid fa-book-open mr-2"></i> Explore the Blog
+              <i class="fa-solid fa-book-open mr-2" aria-hidden="true"></i> Explore the Blog
             </button>
           </a>
         </div>
-      </section>    
-
-    <!-- Footer -->
+      </section>     
 
     <footer id="footer" class="bg-stone text-cream py-12">
         <div class="container mx-auto px-6">
@@ -525,44 +519,49 @@
                 <div class="grid md:grid-cols-4 gap-8 mb-8">
                     <div>
                         <div class="font-playfair text-2xl font-semibold mb-4">Italian Retreat Venues</div>
-                        <p class="text-sm opacity-75 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
+                        <p class="text-sm opacity-90 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
                         <div class="flex space-x-4">
-                            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i></a>
-                            <a href="mailto:helloretreatmatcher@gmail.com"><i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i></a>
+                            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            </a>
+                            <a href="mailto:helloretreatmatcher@gmail.com" aria-label="Email Us">
+                                <i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            </a>
                         </div>
                     </div>
                     
                     <div>
                         <h4 class="font-semibold mb-4">Blog Categories</h4>
-                        <ul class="space-y-2 text-sm opacity-75">
-                            <a href="destinations.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Destination Guides</span></li></a>
-                            <a href="venues.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Venue Reviews</span></li></a>
-                            <a href="planning.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Planning Tips</span></li></a>
-                            <a href="affiliate.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Recommendations</span></li></a>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="destinations.html" class="hover:text-sage transition-colors cursor-pointer">Destination Guides</a></li>
+                            <li><a href="venues.html" class="hover:text-sage transition-colors cursor-pointer">Venue Reviews</a></li>
+                            <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Planning Tips</a></li>
+                            <li><a href="affiliate.html" class="hover:text-sage transition-colors cursor-pointer">Recommendations</a></li>
                         </ul>
                     </div>
                     
                     <div>
                         <h4 class="font-semibold mb-4">Services</h4>
-                        <ul class="space-y-2 text-sm opacity-75">
-                            <a href="index.html#how-it-works"><li><span class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</span></li></a>     
-                            <a href="planning.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</span></li></a> 
-                            <a href="setup.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Commission Setup</span></li></a>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="index.html#how-it-works" class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</a></li>     
+                            <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</a></li> 
+                            <li><a href="setup.html" class="hover:text-sage transition-colors cursor-pointer">Commission Setup</a></li>
                         </ul>
                     </div>
                     
                     <div>
                         <h4 class="font-semibold mb-4">Contact</h4>
-                        <ul class="space-y-2 text-sm opacity-75">
+                        <ul class="space-y-2 text-sm opacity-90">
                             <li>Based in Monfalcone, Italy</li>
-                            <a href="mailto:helloretreatmatcher@gmail.com"><li>helloretreatmatcher@gmail.com</li></a>
+                            <li><a href="mailto:helloretreatmatcher@gmail.com" class="hover:text-sage transition-colors cursor-pointer">helloretreatmatcher@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
                 
                 <div class="border-t border-cream/20 pt-8 text-center">
-                    <p class="text-sm opacity-75">© 2025 Italian Retreat Venues. All rights reserved.</p>
-                    <p class="text-sm opacity-75">Designed by 
+                    <p class="text-sm opacity-90">© 2025 Italian Retreat Venues. All rights reserved.
+                    </p>
+                    <p class="text-sm opacity-90">Designed by 
                             <a href="https://www.pixelperfect-ux.store/" 
                                 target="_blank" 
                                 rel="noopener noreferrer" 
@@ -578,20 +577,25 @@
         <div class="bg-white h-full w-64 p-6 shadow-lg">
             <div class="flex justify-between items-center mb-8">
                 <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
-                <button class="text-stone" id="closeMenu">
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
                     <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
             <nav class="flex flex-col space-y-4">
-                <a href="#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
-                <a href="#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
-                <a href="#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
-                <a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>
-                <a href="#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+                <a href="index.html#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="index.html#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="index.html#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
+                <a href="index.html#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>
+                <a href="index.html#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
             </nav>
         </div>
     </div>
 
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -650,49 +654,6 @@
         document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
         document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
         document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
-
-    </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
-    <script>
-        const watchTourBtn = document.getElementById('watchTourBtn');
-        const videoModal = document.getElementById('videoModal');
-        const closeModalBtn = document.getElementById('closeModalBtn');
-        const youtubePlayer = document.getElementById('youtubePlayer');
-            
-        // IMPORTANT: Replace 'VIDEO_ID_HERE' with the actual YouTube video ID.
-        // For your provided URL 'https://youtu.be/7nnlhKd1WG4',
-        // if '0' is truly the YouTube video ID, use that. Otherwise, find the ID
-        // from the actual YouTube URL (e.g., watch?v=dQw4w9WgXcQ, the ID is dQw4w9WgXcQ).
-        const youtubeVideoId = '7nnlhKd1WG4'; // This looks like a valid YouTube video ID!
-            
-        function openVideoModal() {
-            videoModal.classList.remove('hidden'); // Show the modal
-            // **THIS IS THE CORRECTED LINE:**
-            youtubePlayer.src = `https://www.youtube.com/embed/${youtubeVideoId}?autoplay=1&rel=0`;
-        }
-            
-        function closeVideoModal() {
-            videoModal.classList.add('hidden'); // Hide the modal
-            youtubePlayer.src = ''; // Stop the video by clearing its src
-        }
-            
-        // Event Listeners
-        watchTourBtn.addEventListener('click', openVideoModal);
-        closeModalBtn.addEventListener('click', closeVideoModal);
-            
-        // Close modal if user clicks outside the video box
-        videoModal.addEventListener('click', function(event) {
-            if (event.target === videoModal) {
-                closeVideoModal();
-            }
-        });
-            
-        // Close modal if user presses Escape key
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && !videoModal.classList.contains('hidden')) {
-                closeVideoModal();
-            }
-        });
     </script>
 </body>
 </html>
