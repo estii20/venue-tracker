@@ -43,13 +43,11 @@
     <meta property="og:url" content="https://italianretreatvenues.com/blog.html">
     <meta property="og:type" content="website">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style"> 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <style>
         ::-webkit-scrollbar { display: none; }
@@ -71,9 +69,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -94,8 +96,9 @@
     <section id="hero" class="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img class="w-full h-full object-cover" 
-            src="images/hero.png" 
-            alt="serene luxury villa in Tuscany with olive groves, golden hour lighting, minimalist architecture" />
+                src="images/hero.png" 
+                alt="serene luxury villa in Tuscany with olive groves, golden hour lighting, minimalist architecture" 
+                loading="lazy">
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         
@@ -128,8 +131,9 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
                     <article id="featured-article-1" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                         <img class="w-full h-48 object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8ad41b835c-adf924ae30abfbc97215.png" 
-                        alt="Trieste coastal view with yoga practitioners, golden hour lighting, serene atmosphere" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8ad41b835c-adf924ae30abfbc97215.png" 
+                            alt="Trieste coastal view with yoga practitioners, golden hour lighting, serene atmosphere" 
+                            loading="lazy">
                         <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Destination Guide</span>
@@ -146,8 +150,9 @@
 
                     <article id="featured-article-2" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                         <img class="w-full h-48 object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b2d1a5f06-b7fdfef6266a07ae6fd0.png" 
-                        alt="luxury yoga studio in Friuli region Italy, mountain backdrop, elegant interior design" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b2d1a5f06-b7fdfef6266a07ae6fd0.png" 
+                            alt="luxury yoga studio in Friuli region Italy, mountain backdrop, elegant interior design" 
+                            loading="lazy">
                         <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Venue Guide</span>
@@ -164,8 +169,9 @@
 
                     <article id="featured-article-3" class="bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                         <img class="w-full h-48 object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4b21f9fb8-2cccc41a3ed7e4a17e59.png" 
-                        alt="retreat planning checklist on elegant desk, Italian villa background, professional styling" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4b21f9fb8-2cccc41a3ed7e4a17e59.png" 
+                            alt="retreat planning checklist on elegant desk, Italian villa background, professional styling" 
+                            loading="lazy">
                         <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Planning Guide</span>
@@ -252,8 +258,9 @@
                 <div class="space-y-8">
                     <article id="recent-article-1" class="flex flex-col md:flex-row gap-6 bg-cream rounded-lg overflow-hidden shadow-lg">
                         <img class="w-full md:w-80 h-48 md:h-auto object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9d9a8d51cd-2ae576a96d63ae4a2c15.png" 
-                        alt="Italian wellness retreat breakfast table, healthy organic food, natural lighting" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9d9a8d51cd-2ae576a96d63ae4a2c15.png" 
+                            alt="Italian wellness retreat breakfast table, healthy organic food, natural lighting" 
+                            loading="lazy">
                         <div class="p-6 flex-1">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Nutrition</span>
@@ -269,8 +276,9 @@
                     <div class="space-y-8">
                     <article id="recent-article-1" class="flex flex-col md:flex-row gap-6 bg-cream rounded-lg overflow-hidden shadow-lg">
                         <img class="w-full md:w-80 h-48 md:h-auto object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e935ad55c9-4c07d3f607ebc55579a7.png" 
-                        alt="Italian wellness retreat breakfast table, healthy organic food, natural lighting" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e935ad55c9-4c07d3f607ebc55579a7.png" 
+                            alt="Italian wellness retreat breakfast table, healthy organic food, natural lighting" 
+                            loading="lazy">
                         <div class="p-6 flex-1">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Nutrition</span>
@@ -286,8 +294,9 @@
                     <div class="space-y-8">
                     <article id="recent-article-1" class="flex flex-col md:flex-row gap-6 bg-cream rounded-lg overflow-hidden shadow-lg">
                         <img class="w-full md:w-80 h-48 md:h-auto object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d1c9efa13f-4f5fabae3fbbe18ca38c.png" 
-                        alt="luxury retreat venue checklist on elegant marble desk, Italian villa terrace background, soft natural lighting" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d1c9efa13f-4f5fabae3fbbe18ca38c.png" 
+                            alt="luxury retreat venue checklist on elegant marble desk, Italian villa terrace background, soft natural lighting" 
+                            loading="lazy">
                         <div class="p-6 flex-1">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Planning Guide</span>
@@ -317,8 +326,9 @@
 
                     <article id="recent-article-3" class="flex flex-col md:flex-row gap-6 bg-cream rounded-lg overflow-hidden shadow-lg">
                         <img class="w-full md:w-80 h-48 md:h-auto object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/699f901575-aec1679898b7f81c7b45.png" 
-                        alt="Italian countryside travel insurance documents, professional desk setup" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/699f901575-aec1679898b7f81c7b45.png" 
+                            alt="Italian countryside travel insurance documents, professional desk setup" 
+                            loading="lazy">
                         <div class="p-6 flex-1">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Legal & Insurance</span>
@@ -333,30 +343,6 @@
                         </div>
                     </article>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup -->
-    <section id="newsletter" class="py-20 bg-cream">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-stone mb-8">
-                    Stay Inspired
-                </h2>
-                <p class="text-xl text-gray-600 mb-12">
-                    Get monthly insights, venue spotlights, and retreat planning tips delivered to your inbox.
-                </p>
-                
-                <form class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-2xl mx-auto">
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-sage/50">
-                        <button type="submit" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300">
-                            Subscribe
-                        </button>
-                    </div>
-                    <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe anytime. Your privacy is protected.</p>
-                </form>
             </div>
         </div>
     </section>
@@ -416,6 +402,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 
     <script>
         // Smooth scrolling for navigation links
