@@ -43,12 +43,14 @@
         }
     }
     </script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -71,9 +73,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -90,434 +96,464 @@
         </div>
     </header>
 
-        <!-- Hero -->
-
-<section id="hero" class="relative h-[600px] flex items-center justify-center overflow-hidden mt-20">
-    <div class="absolute inset-0 z-0">
-        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/850c865e28-2e6796a962b17ab9b286.png" alt="luxury Italian villa terrace overlooking vineyard, yoga mat setup, golden hour lighting, serene wellness atmosphere" />
-        <div class="absolute inset-0 bg-black/40"></div>
-    </div>
-    
-    <div class="relative z-10 text-center text-white max-w-4xl px-6">
-        <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Handpicked Retreat Venues in Italy
-        </h1>
-        <p class="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto leading-relaxed">
-            Discover our luxury collection, personally curated and vetted for UK wellness professionals.
-        </p>
-        <a href="#all-venues" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
-            Browse Venues
-        </a>
-    </div>
-</section>
+    <!-- Hero -->
+    <section id="hero" class="relative h-[600px] flex items-center justify-center overflow-hidden mt-20">
+        <div class="absolute inset-0 z-0">
+            <img class="w-full h-full object-cover" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/850c865e28-2e6796a962b17ab9b286.png" 
+                alt="luxury Italian villa terrace overlooking vineyard, yoga mat setup, golden hour lighting, serene wellness atmosphere" 
+                loading="lazy"/>
+            <div class="absolute inset-0 bg-black/40"></div>
+        </div>
+        
+        <div class="relative z-10 text-center text-white max-w-4xl px-6">
+            <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                Handpicked Retreat Venues in Italy
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 font-light max-w-2xl mx-auto leading-relaxed">
+                Discover our luxury collection, personally curated and vetted for UK wellness professionals.
+            </p>
+            <a href="#all-venues" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
+                Browse Venues
+            </a>
+        </div>
+    </section>
 
     <!-- Venues -->
+    <section id="venue-listings" class="py-20 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-12">
+                    Our Handpicked Venues
+                </h2>
 
-<section id="venue-listings" class="py-20 bg-cream">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-12">
-                Our Handpicked Venues
-            </h2>
+                <div id="venue-filters" class="flex flex-wrap justify-center md:justify-start items-end gap-6 p-6 bg-white rounded-xl mb-12 shadow-lg border border-gray-200/50">
+                    
+                    <div class="min-w-[150px] flex-grow relative">
+                        <label for="filter-region" class="block text-sm font-semibold uppercase tracking-wider text-stone mb-2">Region</label>
+                        <select id="filter-region" 
+                                data-filter-key="data-region" 
+                                class="block w-full py-2.5 px-4 border border-gray-300/80 bg-white text-stone text-sm rounded-lg transition duration-150 ease-in-out appearance-none cursor-pointer focus:ring-sage focus:border-sage focus:outline-none hover:border-sage-dark">
+                            <option value="all">All Regions</option>
+                            <option value="trieste">Trieste / Friuli</option>
+                            <option value="dolomites">Dolomites / Alpine</option>
+                            <option value="umbria">Umbria</option>
+                            <option value="sicily">Sicily</option>
+                            <option value="le-marche">Le Marche</option>
+                            <option value="puglia">Puglia</option>
+                            <option value="lazio">Lazio</option>
+                            <option value="south-tyrol">South Tyrol</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone/80 mb-0 mt-8">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
 
-            <div id="venue-filters" class="flex flex-wrap justify-center md:justify-start items-end gap-6 p-6 bg-white rounded-xl mb-12 shadow-lg border border-gray-200/50">
-                
-                <div class="min-w-[150px] flex-grow relative">
-                    <label for="filter-region" class="block text-sm font-semibold uppercase tracking-wider text-stone mb-2">Region</label>
-                    <select id="filter-region" 
-                            data-filter-key="data-region" 
-                            class="block w-full py-2.5 px-4 border border-gray-300/80 bg-white text-stone text-sm rounded-lg transition duration-150 ease-in-out appearance-none cursor-pointer focus:ring-sage focus:border-sage focus:outline-none hover:border-sage-dark">
-                        <option value="all">All Regions</option>
-                        <option value="trieste">Trieste / Friuli</option>
-                        <option value="dolomites">Dolomites / Alpine</option>
-                        <option value="umbria">Umbria</option>
-                        <option value="sicily">Sicily</option>
-                        <option value="le-marche">Le Marche</option>
-                        <option value="puglia">Puglia</option>
-                        <option value="lazio">Lazio</option>
-                        <option value="south-tyrol">South Tyrol</option>
-                    </select>
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone/80 mb-0 mt-8">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <div class="min-w-[150px] flex-grow relative">
+                        <label for="filter-type" class="block text-sm font-semibold uppercase tracking-wider text-stone mb-2">Type</label>
+                        <select id="filter-type" 
+                                data-filter-key="data-type" 
+                                class="block w-full py-2.5 px-4 border border-gray-300/80 bg-white text-stone text-sm rounded-lg transition duration-150 ease-in-out appearance-none cursor-pointer focus:ring-sage focus:border-sage focus:outline-none hover:border-sage-dark">
+                            <option value="all">All Types</option>
+                            <option value="luxury-resorts">Luxury Resorts</option>
+                            <option value="spa-resorts">Spa Resorts</option>
+                            <option value="historic-villas">Historic Villas</option>
+                            <option value="agriturismo">Agriturismo</option>
+                            <option value="private-villas">Private Villas</option>
+                            <option value="group-hire">Group Hire</option>
+                            <option value="city-hotels">City Hotels</option>
+                            <option value="alpine-lodge">Alpine Lodge</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone/80 mb-0 mt-8">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-[150px] flex-grow relative">
+                        <label for="filter-tag" class="block text-sm font-semibold uppercase tracking-wider text-stone mb-2">Focus</label>
+                        <select id="filter-tag" 
+                                data-filter-key="data-tags" 
+                                class="block w-full py-2.5 px-4 border border-gray-300/80 bg-white text-stone text-sm rounded-lg transition duration-150 ease-in-out appearance-none cursor-pointer focus:ring-sage focus:border-sage focus:outline-none hover:border-sage-dark">
+                            <option value="all">All Tags</option>
+                            <option value="coastal">Coastal/Beach</option>
+                            <option value="mountain">Mountain/Alpine</option>
+                            <option value="yoga-experienced">Yoga Focus</option>
+                            <option value="large-groups">Large Groups</option>
+                            <option value="digital-detox">Digital Detox</option>
+                            <option value="wine-tasting">Wine/Culinary</option>
+                        </select>
+                        <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone/80 mb-0 mt-8">
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                        </div>
+                    </div>
+                    
+                    <div class="flex-shrink-0">
+                        <button id="clear-filters" 
+                                class="w-full py-2.5 px-6 font-medium text-white bg-sage rounded-lg shadow-md hover:bg-sage-dark transition duration-150 ease-in-out text-sm uppercase tracking-wider md:mt-0">
+                            Clear Filters
+                        </button>
                     </div>
                 </div>
+                <div class="grid lg:grid-cols-2 gap-12" role="feed" aria-label="Italian Retreat Venues">
+                    
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
+                        data-region="piedmont" data-type="dedicated-centers" data-tags="alpine lake dedicated-center premium">
+                        <img class="w-full h-64 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d567c1bdcd-6e391c37a87ede94e12b.png" 
+                            alt="Mandali Retreat Lake Orta Italy, alpine lake setting, luxury yoga studio, mountain backdrop" 
+                            loading="lazy"/>    
+                        <div class="p-8">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-sage text-white px-4 py-2 rounded-full text-sm font-medium">Dedicated Retreat Center</span>
+                                <div class="flex items-center text-stone">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <span class="ml-1 font-medium">Premium</span>
+                                </div>
+                            </div>
+                            <h3 class="font-playfair text-2xl font-bold text-stone mb-3">Mandali Retreat</h3>
+                            <p class="text-gray-600 mb-4">Lake Orta, Piedmont</p>
+                            <p class="text-gray-700 mb-6 leading-relaxed">World-renowned retreat center offering multiple yoga studios, extensive spa facilities, and breathtaking alpine lake views. Perfect for immersive wellness experiences.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+                                <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>Varies by retreat</span></div>
+                                <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Full spa facilities</span></div>
+                                <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Vegetarian/Vegan</span></div>
+                                <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Milan airports</span></div>
+                            </div>
+                            <button 
+                                data-tally-open="3x8L9G" 
+                                class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
+                            >
+                                Request Booking Info
+                            </button>
+                        </div>
+                    </div>
 
-                <div class="min-w-[150px] flex-grow relative">
-                    <label for="filter-type" class="block text-sm font-semibold uppercase tracking-wider text-stone mb-2">Type</label>
-                    <select id="filter-type" 
-                            data-filter-key="data-type" 
-                            class="block w-full py-2.5 px-4 border border-gray-300/80 bg-white text-stone text-sm rounded-lg transition duration-150 ease-in-out appearance-none cursor-pointer focus:ring-sage focus:border-sage focus:outline-none hover:border-sage-dark">
-                        <option value="all">All Types</option>
-                        <option value="luxury-resorts">Luxury Resorts</option>
-                        <option value="spa-resorts">Spa Resorts</option>
-                        <option value="historic-villas">Historic Villas</option>
-                        <option value="agriturismo">Agriturismo</option>
-                        <option value="private-villas">Private Villas</option>
-                        <option value="group-hire">Group Hire</option>
-                        <option value="city-hotels">City Hotels</option>
-                        <option value="alpine-lodge">Alpine Lodge</option>
-                    </select>
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone/80 mb-0 mt-8">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
+                        data-region="tuscany" data-type="agriturismo" data-tags="agriturismo rustic historic-villas small-groups">
+                        <img class="w-full h-64 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/34fbd57681-9f6b7597fa41d46839f9.png" 
+                            alt="Agriturismo near Tuscany, showing planning documents and a calendar" 
+                            loading="lazy"/>    
+                        <div class="p-8">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-stone text-white px-4 py-2 rounded-full text-sm font-medium">Authentic Agriturismo</span>
+                                <div class="flex items-center text-stone">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <span class="ml-1 font-medium">Mid-Range</span>
+                                </div>
+                            </div>
+                            <h3 class="font-playfair text-2xl font-bold text-stone mb-3">La Vecchia Fattoria</h3>
+                            <p class="text-gray-600 mb-4">Val d'Orcia, Tuscany</p>
+                            <p class="text-gray-700 mb-6 leading-relaxed">A secluded Tuscan farmhouse with dedicated indoor and outdoor yoga spaces. Known for its farm-to-table cuisine and tranquil, historic charm.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+                                <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>10 - 18 Guests</span></div>
+                                <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Outdoor Pool Only</span></div>
+                                <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Local & Organic</span></div>
+                                <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Florence/Pisa</span></div>
+                            </div>
+                            <button 
+                                data-tally-open="3x8L9G" 
+                                class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
+                            >
+                                Request Booking Info
+                            </button>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="min-w-[150px] flex-grow relative">
-                    <label for="filter-tag" class="block text-sm font-semibold uppercase tracking-wider text-stone mb-2">Focus</label>
-                    <select id="filter-tag" 
-                            data-filter-key="data-tags" 
-                            class="block w-full py-2.5 px-4 border border-gray-300/80 bg-white text-stone text-sm rounded-lg transition duration-150 ease-in-out appearance-none cursor-pointer focus:ring-sage focus:border-sage focus:outline-none hover:border-sage-dark">
-                        <option value="all">All Tags</option>
-                        <option value="coastal">Coastal/Beach</option>
-                        <option value="mountain">Mountain/Alpine</option>
-                        <option value="yoga-experienced">Yoga Focus</option>
-                        <option value="large-groups">Large Groups</option>
-                        <option value="digital-detox">Digital Detox</option>
-                        <option value="wine-tasting">Wine/Culinary</option>
-                    </select>
-                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-stone/80 mb-0 mt-8">
-                        <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
+                        data-region="lombardy" data-type="luxury-resorts" data-tags="lake alpine luxury large-groups medical-wellness">
+                        <img class="w-full h-64 object-cover" 
+                            src="images/lefay_resort-min.jpg" 
+                            alt="Lefay Resort & Spa Lago di Garda, infinity pool overlooking lake and mountains" 
+                            loading="lazy"/>    
+                        <div class="p-8">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium">Luxury Resort & SPA</span>
+                                <div class="flex items-center text-stone">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <span class="ml-1 font-medium">Ultra-Premium</span>
+                                </div>
+                            </div>
+                            <h3 class="font-playfair text-2xl font-bold text-stone mb-3">Lefay Resort & SPA</h3>
+                            <p class="text-gray-600 mb-4">Gargnano, Lake Garda</p>
+                            <p class="text-gray-700 mb-6 leading-relaxed">Exclusive 5-star resort with a focus on TCM (Traditional Chinese Medicine) and modern science. Features a massive 4,300 sqm spa, ideal for high-end corporate or luxury retreats.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+                                <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>Large Groups (50+)</span></div>
+                                <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Medical Wellness</span></div>
+                                <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Gourmet/Healthy</span></div>
+                                <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Verona/Milan</span></div>
+                            </div>
+                            <button 
+                                data-tally-open="3x8L9G" 
+                                class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
+                            >
+                                Request Booking Info
+                            </button>
+                        </div>
                     </div>
+
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
+                        data-region="lazio" data-type="dedicated-centers" data-tags="purpose-built yoga-experienced boutique vegan">
+                        <img class="w-full h-64 object-cover" 
+                            src="images/olea_retreat_centre-min.jpg" 
+                            alt="OLEA yoga platform in Sabina countryside, near Rome, surrounded by olive trees" 
+                            loading="lazy"/>    
+                        <div class="p-8">
+                            <div class="flex items-center justify-between mb-4">
+                                <span class="bg-sage text-white px-4 py-2 rounded-full text-sm font-medium">Purpose-Built Retreat</span>
+                                <div class="flex items-center text-stone">
+                                    <i class="fas fa-star text-yellow-500"></i>
+                                    <span class="ml-1 font-medium">Boutique</span>
+                                </div>
+                            </div>
+                            <h3 class="font-playfair text-2xl font-bold text-stone mb-3">OLEA Retreat Centre</h3>
+                            <p class="text-gray-600 mb-4">Sabina Countryside, near Rome</p>
+                            <p class="text-gray-700 mb-6 leading-relaxed">Renowned for its 150m² panoramic outdoor yoga platform and indoor shala. Two restored farmhouses offer flexibility for small to medium-sized groups.</p>
+                            <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
+                                <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>8 - 22 Guests</span></div>
+                                <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Pool & Gardens</span></div>
+                                <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Gourmet Vegan</span></div>
+                                <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Rome Airports</span></div>
+                            </div>
+                            <button 
+                                data-tally-open="3x8L9G" 
+                                class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
+                            >
+                                Request Booking Info
+                            </button>
+                        </div>
+                    </div>
+                    
                 </div>
-                
-                <div class="flex-shrink-0">
-                    <button id="clear-filters" 
-                            class="w-full py-2.5 px-6 font-medium text-white bg-sage rounded-lg shadow-md hover:bg-sage-dark transition duration-150 ease-in-out text-sm uppercase tracking-wider md:mt-0">
-                        Clear Filters
+                <div class="text-center mt-14">
+                    <h3 class="font-playfair text-3xl font-bold text-stone mb-4">Need Help Finding The Right Fit?</h3>
+                    <p class="text-lg text-gray-700 mb-8">Our team offers a free, personalised consultation to match your specific group size, style, and budget to the perfect Italian location.</p>
+                    <button 
+                        data-tally-open="3x8L9G" 
+                        class="bg-stone hover:bg-stone/90 text-white px-10 py-5 rounded-full text-xl font-medium transition-all duration-300 transform hover:scale-105"
+                    >
+                        Request a Custom Venue Search
                     </button>
                 </div>
             </div>
-            <div class="grid lg:grid-cols-2 gap-12" role="feed" aria-label="Italian Retreat Venues">
-                
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
-                    data-region="piedmont" data-type="dedicated-centers" data-tags="alpine lake dedicated-center premium">
-                    <img class="w-full h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d567c1bdcd-6e391c37a87ede94e12b.png" alt="Mandali Retreat Lake Orta Italy, alpine lake setting, luxury yoga studio, mountain backdrop" />
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-sage text-white px-4 py-2 rounded-full text-sm font-medium">Dedicated Retreat Center</span>
-                            <div class="flex items-center text-stone">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <span class="ml-1 font-medium">Premium</span>
-                            </div>
-                        </div>
-                        <h3 class="font-playfair text-2xl font-bold text-stone mb-3">Mandali Retreat</h3>
-                        <p class="text-gray-600 mb-4">Lake Orta, Piedmont</p>
-                        <p class="text-gray-700 mb-6 leading-relaxed">World-renowned retreat center offering multiple yoga studios, extensive spa facilities, and breathtaking alpine lake views. Perfect for immersive wellness experiences.</p>
-                        <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
-                            <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>Varies by retreat</span></div>
-                            <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Full spa facilities</span></div>
-                            <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Vegetarian/Vegan</span></div>
-                            <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Milan airports</span></div>
-                        </div>
-                        <button 
-                            data-tally-open="3x8L9G" 
-                            class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
-                        >
-                            Request Booking Info
-                        </button>
-                    </div>
-                </div>
+        </div>
+    </section>
 
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
-                    data-region="tuscany" data-type="agriturismo" data-tags="agriturismo rustic historic-villas small-groups">
-                    <img class="w-full h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/34fbd57681-9f6b7597fa41d46839f9.png" alt="Agriturismo near Tuscany, showing planning documents and a calendar" />
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-stone text-white px-4 py-2 rounded-full text-sm font-medium">Authentic Agriturismo</span>
-                            <div class="flex items-center text-stone">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <span class="ml-1 font-medium">Mid-Range</span>
+    <!-- All Venues -->
+    <section id="all-venues" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-8">
+                    More Venues In Our Portfolio
+                </h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div id="venue-eremito" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="umbria" 
+                        data-type="historic-villas" 
+                        data-tags="eco-luxury digital-detox monastery">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82a3b0ac57-0de90e77668b21d80b44.png" 
+                            alt="Eremito Hotelito Umbria stone monastery luxury eco retreat, spiritual atmosphere, candlelit interior" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Eco-Luxury</span>
+                                <span class="text-gray-500 text-sm ml-3">Umbria</span>
                             </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Eremito Hotelito</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Secluded stone monastery turned luxury eco-retreat, perfect for digital detox and spiritual wellness.</p>
+                            <a href="eremito_hotelito.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
                         </div>
-                        <h3 class="font-playfair text-2xl font-bold text-stone mb-3">La Vecchia Fattoria</h3>
-                        <p class="text-gray-600 mb-4">Val d'Orcia, Tuscany</p>
-                        <p class="text-gray-700 mb-6 leading-relaxed">A secluded Tuscan farmhouse with dedicated indoor and outdoor yoga spaces. Known for its farm-to-table cuisine and tranquil, historic charm.</p>
-                        <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
-                            <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>10 - 18 Guests</span></div>
-                            <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Outdoor Pool Only</span></div>
-                            <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Local & Organic</span></div>
-                            <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Florence/Pisa</span></div>
-                        </div>
-                        <button 
-                            data-tally-open="3x8L9G" 
-                            class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
-                        >
-                            Request Booking Info
-                        </button>
                     </div>
-                </div>
 
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
-                    data-region="lombardy" data-type="luxury-resorts" data-tags="lake alpine luxury large-groups medical-wellness">
-                    <img class="w-full h-64 object-cover" 
-                    src="images/lefay_resort-min.jpg" alt="Lefay Resort & Spa Lago di Garda, infinity pool overlooking lake and mountains" />
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-red-700 text-white px-4 py-2 rounded-full text-sm font-medium">Luxury Resort & SPA</span>
-                            <div class="flex items-center text-stone">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <span class="ml-1 font-medium">Ultra-Premium</span>
+                    <div id="venue-villa-oliveto" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="le-marche" 
+                        data-type="private-villas" 
+                        data-tags="intimate-groups modern rustic pool">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/33ce595978-f86cf3895481a8ff9947.png" 
+                            alt="Villa Oliveto Le Marche infinity pool, modern rustic villa, olive groves, sunset lighting" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Private Villa</span>
+                                <span class="text-gray-500 text-sm ml-3">Le Marche</span>
                             </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Villa Oliveto</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Modern meets rustic villa with infinity pool, perfect for intimate retreat groups seeking privacy.</p>
+                            <a href="villa_oliveto.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
                         </div>
-                        <h3 class="font-playfair text-2xl font-bold text-stone mb-3">Lefay Resort & SPA</h3>
-                        <p class="text-gray-600 mb-4">Gargnano, Lake Garda</p>
-                        <p class="text-gray-700 mb-6 leading-relaxed">Exclusive 5-star resort with a focus on TCM (Traditional Chinese Medicine) and modern science. Features a massive 4,300 sqm spa, ideal for high-end corporate or luxury retreats.</p>
-                        <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
-                            <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>Large Groups (50+)</span></div>
-                            <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Medical Wellness</span></div>
-                            <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Gourmet/Healthy</span></div>
-                            <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Verona/Milan</span></div>
-                        </div>
-                        <button 
-                            data-tally-open="3x8L9G" 
-                            class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
-                        >
-                            Request Booking Info
-                        </button>
                     </div>
-                </div>
 
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300" role="article"
-                    data-region="lazio" data-type="dedicated-centers" data-tags="purpose-built yoga-experienced boutique vegan">
-                    <img class="w-full h-64 object-cover" 
-                    src="images/olea_retreat_centre-min.jpg" alt="OLEA yoga platform in Sabina countryside, near Rome, surrounded by olive trees" />
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="bg-sage text-white px-4 py-2 rounded-full text-sm font-medium">Purpose-Built Retreat</span>
-                            <div class="flex items-center text-stone">
-                                <i class="fas fa-star text-yellow-500"></i>
-                                <span class="ml-1 font-medium">Boutique</span>
+                    <div id="venue-borgo-egnazia" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="puglia" 
+                        data-type="luxury-resorts" 
+                        data-tags="5-star exclusive coastal large-groups">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9dfb56ff79-da1cf65b48ab6e74e856.png" 
+                            alt="Borgo Egnazia Puglia luxury resort traditional architecture, white stone buildings, Mediterranean style" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">5-Star Resort</span>
+                                <span class="text-gray-500 text-sm ml-3">Puglia</span>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Borgo Egnazia</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Top-tier luxury resort popular for exclusive wellness events and high-profile retreats.</p>
+                            <a href="borgo_egnazia.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="venue-sunflower" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="lazio" 
+                        data-type="group-hire" 
+                        data-tags="historic-palace yoga-experienced small-groups">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b07abf31dc-af4e80e3f7b3a8240f37.png" 
+                            alt="Sunflower Retreats Casperia historic palace yoga studio, wooden floors, natural lighting" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Group Hire</span>
+                                <span class="text-gray-500 text-sm ml-3">Lazio</span>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Sunflower Retreats</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Established group hire venue in converted palace, experienced with hosting yoga retreats.</p>
+                            <a href="sunflower_retreat.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="venue-doubletree" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="trieste" 
+                        data-type="city-hotels" 
+                        data-tags="urban corporate wellness">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/685ad64b6f-1e4209077b1989083a0e.png" 
+                            alt="DoubleTree Hilton Trieste city center hotel wellness spa, modern interior, urban luxury" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">City Hotel</span>
+                                <span class="text-gray-500 text-sm ml-3">Trieste</span>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">DoubleTree by Hilton</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Central Trieste location with wellness facilities, perfect for urban retreat experiences.</p>
+                            <a href="doubletree.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div id="venue-adler" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="south-tyrol" 
+                        data-type="alpine-lodge" 
+                        data-tags="mountain luxury spa">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/535651c1c7-9687366ced5f5dacf30e.png" 
+                            alt="Adler Lodge Ritten South Tyrol alpine luxury lodge, mountain views, wooden architecture" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Alpine Lodge</span>
+                                <span class="text-gray-500 text-sm ml-3">South Tyrol</span>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Adler Lodge Ritten</h3>
+                            <p class="text-gray-600 mb-4 leading-relaxed">Alpine-style luxury lodge with spa and yoga facilities, surrounded by mountain nature.</p>
+                            <a href="adler_lodge.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="trieste" 
+                        data-type="luxury-resorts" 
+                        data-tags="coastal luxury-spas large-groups">
+                        <img class="w-full h-56 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5c98e539d3-87f6215258ee3248d35a.png" 
+                            alt="Tivoli Portopiccolo Sistiana coastal luxury resort, infinity pool, sea views, modern spa architecture" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Luxury Resort</span>
+                                <div class="flex items-center text-stone">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-1 font-medium text-sm">5-Star</span>
+                                </div>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Tivoli Portopiccolo</h3>
+                            <p class="text-gray-600 text-sm mb-3">Sistiana, near Trieste</p>
+                            <p class="text-gray-700 mb-4 text-sm leading-relaxed">Stunning coastal luxury resort with comprehensive wellness facilities and direct beach access.</p>
+                            <div class="flex gap-2">
+                            <a href="tivoli_portopiccolo.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
                             </div>
                         </div>
-                        <h3 class="font-playfair text-2xl font-bold text-stone mb-3">OLEA Retreat Centre</h3>
-                        <p class="text-gray-600 mb-4">Sabina Countryside, near Rome</p>
-                        <p class="text-gray-700 mb-6 leading-relaxed">Renowned for its 150m² panoramic outdoor yoga platform and indoor shala. Two restored farmhouses offer flexibility for small to medium-sized groups.</p>
-                        <div class="grid grid-cols-2 gap-4 mb-6 text-sm">
-                            <div class="flex items-center"><i class="fas fa-users text-sage mr-2"></i><span>8 - 22 Guests</span></div>
-                            <div class="flex items-center"><i class="fas fa-spa text-sage mr-2"></i><span>Pool & Gardens</span></div>
-                            <div class="flex items-center"><i class="fas fa-utensils text-sage mr-2"></i><span>Gourmet Vegan</span></div>
-                            <div class="flex items-center"><i class="fas fa-plane text-sage mr-2"></i><span>Rome Airports</span></div>
-                        </div>
-                        <button 
-                            data-tally-open="3x8L9G" 
-                            class="w-full bg-stone hover:bg-stone/90 text-white py-3 rounded-full font-medium transition-all duration-300"
-                        >
-                            Request Booking Info
-                        </button>
                     </div>
+
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="dolomites" 
+                        data-type="spa-resorts" 
+                        data-tags="mountain luxury winter-retreats yoga-friendly">
+                        <img class="w-full h-56 object-cover" 
+                            src="images/faloria-min.jpg" 
+                            alt="luxury spa resort in Dolomites with mountain backdrop" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center justify-between mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Spa Resort</span>
+                                <div class="flex items-center text-stone">
+                                    <i class="fas fa-star"></i>
+                                    <span class="ml-1 font-medium text-sm">4-Star</span> </div>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Faloria Spa Resort – Dolomites</h3>
+                            <p class="text-gray-600 text-sm mb-3">Cortina, Dolomites</p>
+                            <p class="text-gray-700 mb-4 text-sm leading-relaxed">Modern luxury meets mountain magic. Ideal for winter yoga or slow retreats.</p>
+                            <div class="flex gap-2">
+                            <a href="faloria_spa_resort.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="venue-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
+                        data-region="umbria" 
+                        data-type="historic-villas" 
+                        data-tags="monastery historic-venue peaceful rural wine-tasting">
+                        <img class="w-full h-56 object-cover" 
+                            src="images/san_biagio-min.jpg" 
+                            alt="historic villa in Umbria with vineyards and a tranquil garden" 
+                            loading="lazy"/>    
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Historic Villa</span>
+                                <span class="text-gray-500 text-sm ml-3">Umbria</span>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">San Biagio</h3>
+                            <p class="text-gray-600 text-sm mb-3">Montepulciano, Umbria</p>
+                            <p class="text-gray-700 mb-4 text-sm leading-relaxed">Converted historic monastery with stunning views, ideal for wine-tasting and peaceful retreats.</p>
+                            <div class="flex gap-2">
+                            <a href="monastero_san_biagio_umbria.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                
-            </div>
-            <div class="text-center mt-14">
-                <h3 class="font-playfair text-3xl font-bold text-stone mb-4">Need Help Finding The Right Fit?</h3>
-                <p class="text-lg text-gray-700 mb-8">Our team offers a free, personalised consultation to match your specific group size, style, and budget to the perfect Italian location.</p>
-                <button 
-                    data-tally-open="3x8L9G" 
-                    class="bg-stone hover:bg-stone/90 text-white px-10 py-5 rounded-full text-xl font-medium transition-all duration-300 transform hover:scale-105"
-                >
-                    Request a Custom Venue Search
-                </button>
             </div>
         </div>
-    </div>
-</section>
-
-<!-- All Venues -->
-
-<section id="all-venues" class="py-20 bg-white">
-    <div class="container mx-auto px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-8">
-                More Venues In Our Portfolio
-            </h2>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div id="venue-eremito" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="umbria" 
-                    data-type="historic-villas" 
-                    data-tags="eco-luxury digital-detox monastery">
-                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82a3b0ac57-0de90e77668b21d80b44.png" alt="Eremito Hotelito Umbria stone monastery luxury eco retreat, spiritual atmosphere, candlelit interior" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Eco-Luxury</span>
-                            <span class="text-gray-500 text-sm ml-3">Umbria</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Eremito Hotelito</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Secluded stone monastery turned luxury eco-retreat, perfect for digital detox and spiritual wellness.</p>
-                        <a href="eremito_hotelito.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="venue-villa-oliveto" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="le-marche" 
-                    data-type="private-villas" 
-                    data-tags="intimate-groups modern rustic pool">
-                    <img class="w-full h-48 object-cover" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/33ce595978-f86cf3895481a8ff9947.png" alt="Villa Oliveto Le Marche infinity pool, modern rustic villa, olive groves, sunset lighting" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Private Villa</span>
-                            <span class="text-gray-500 text-sm ml-3">Le Marche</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Villa Oliveto</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Modern meets rustic villa with infinity pool, perfect for intimate retreat groups seeking privacy.</p>
-                        <a href="villa_oliveto.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="venue-borgo-egnazia" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="puglia" 
-                    data-type="luxury-resorts" 
-                    data-tags="5-star exclusive coastal large-groups">
-                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9dfb56ff79-da1cf65b48ab6e74e856.png" alt="Borgo Egnazia Puglia luxury resort traditional architecture, white stone buildings, Mediterranean style" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">5-Star Resort</span>
-                            <span class="text-gray-500 text-sm ml-3">Puglia</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Borgo Egnazia</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Top-tier luxury resort popular for exclusive wellness events and high-profile retreats.</p>
-                        <a href="borgo_egnazia.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="venue-sunflower" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="lazio" 
-                    data-type="group-hire" 
-                    data-tags="historic-palace yoga-experienced small-groups">
-                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b07abf31dc-af4e80e3f7b3a8240f37.png" alt="Sunflower Retreats Casperia historic palace yoga studio, wooden floors, natural lighting" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Group Hire</span>
-                            <span class="text-gray-500 text-sm ml-3">Lazio</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Sunflower Retreats</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Established group hire venue in converted palace, experienced with hosting yoga retreats.</p>
-                        <a href="sunflower_retreat.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="venue-doubletree" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="trieste" 
-                    data-type="city-hotels" 
-                    data-tags="urban corporate wellness">
-                    <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/685ad64b6f-1e4209077b1989083a0e.png" alt="DoubleTree Hilton Trieste city center hotel wellness spa, modern interior, urban luxury" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">City Hotel</span>
-                            <span class="text-gray-500 text-sm ml-3">Trieste</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">DoubleTree by Hilton</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Central Trieste location with wellness facilities, perfect for urban retreat experiences.</p>
-                        <a href="doubletree.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div id="venue-adler" class="venue-card bg-cream rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="south-tyrol" 
-                    data-type="alpine-lodge" 
-                    data-tags="mountain luxury spa">
-                    <img class="w-full h-48 object-cover" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/535651c1c7-9687366ced5f5dacf30e.png" 
-                    alt="Adler Lodge Ritten South Tyrol alpine luxury lodge, mountain views, wooden architecture" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Alpine Lodge</span>
-                            <span class="text-gray-500 text-sm ml-3">South Tyrol</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Adler Lodge Ritten</h3>
-                        <p class="text-gray-600 mb-4 leading-relaxed">Alpine-style luxury lodge with spa and yoga facilities, surrounded by mountain nature.</p>
-                        <a href="adler_lodge.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                    </div>
-                </div>
-
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="trieste" 
-                    data-type="luxury-resorts" 
-                    data-tags="coastal luxury-spas large-groups">
-                    <img class="w-full h-56 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5c98e539d3-87f6215258ee3248d35a.png" alt="Tivoli Portopiccolo Sistiana coastal luxury resort, infinity pool, sea views, modern spa architecture" />
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Luxury Resort</span>
-                            <div class="flex items-center text-stone">
-                                <i class="fas fa-star"></i>
-                                <span class="ml-1 font-medium text-sm">5-Star</span>
-                            </div>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Tivoli Portopiccolo</h3>
-                        <p class="text-gray-600 text-sm mb-3">Sistiana, near Trieste</p>
-                        <p class="text-gray-700 mb-4 text-sm leading-relaxed">Stunning coastal luxury resort with comprehensive wellness facilities and direct beach access.</p>
-                        <div class="flex gap-2">
-                        <a href="tivoli_portopiccolo.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="dolomites" 
-                    data-type="spa-resorts" 
-                    data-tags="mountain luxury winter-retreats yoga-friendly">
-                    <img class="w-full h-56 object-cover" 
-                    src="images/faloria-min.jpg" 
-                    alt="luxury spa resort in Dolomites with mountain backdrop" />
-                    <div class="p-6">
-                        <div class="flex items-center justify-between mb-3">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Spa Resort</span>
-                            <div class="flex items-center text-stone">
-                                <i class="fas fa-star"></i>
-                                <span class="ml-1 font-medium text-sm">4-Star</span> </div>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">Faloria Spa Resort – Dolomites</h3>
-                        <p class="text-gray-600 text-sm mb-3">Cortina, Dolomites</p>
-                        <p class="text-gray-700 mb-4 text-sm leading-relaxed">Modern luxury meets mountain magic. Ideal for winter yoga or slow retreats.</p>
-                        <div class="flex gap-2">
-                        <a href="faloria_spa_resort.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="venue-card bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300"
-                    data-region="umbria" 
-                    data-type="historic-villas" 
-                    data-tags="monastery historic-venue peaceful rural wine-tasting">
-                    <img class="w-full h-56 object-cover" 
-                    src="images/san_biagio-min.jpg" 
-                    alt="historic villa in Umbria with vineyards and a tranquil garden" />
-                    <div class="p-6">
-                        <div class="flex items-center mb-3">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Historic Villa</span>
-                            <span class="text-gray-500 text-sm ml-3">Umbria</span>
-                        </div>
-                        <h3 class="font-playfair text-xl font-semibold mb-2 text-stone">San Biagio</h3>
-                        <p class="text-gray-600 text-sm mb-3">Montepulciano, Umbria</p>
-                        <p class="text-gray-700 mb-4 text-sm leading-relaxed">Converted historic monastery with stunning views, ideal for wine-tasting and peaceful retreats.</p>
-                        <div class="flex gap-2">
-                        <a href="monastero_san_biagio_umbria.html">
-                            <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">View Details →</span>
-                        </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- Instagram -->
     <section id="instagram" class="py-16 bg-white">
@@ -526,23 +562,27 @@
             <div class="flex justify-center space-x-4 mb-8">
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="images/italian_villa_sunlight-min.png" 
-                    alt="Italian villa courtyard with morning light" />
+                        src="images/italian_villa_sunlight-min.png" 
+                        alt="Italian villa courtyard with morning light" 
+                        loading="lazy"/>    
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="images/tuscan_yoga_class-min.png" 
-                    alt="yoga class in Tuscan olive grove" />
+                        src="images/tuscan_yoga_class-min.png" 
+                        alt="yoga class in Tuscan olive grove" 
+                        loading="lazy"/>    
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="images/spa_treatment_room-min.png" 
-                    alt="luxury spa treatment room in Italy" />
+                        src="images/spa_treatment_room-min.png" 
+                        alt="luxury spa treatment room in Italy" 
+                        loading="lazy"/>    
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="images/sunset_view-min.png" 
-                    alt="Italian countryside sunset view" />
+                        src="images/sunset_view-min.png" 
+                        alt="Italian countryside sunset view" 
+                        loading="lazy"/>    
                 </div>
             </div>
             <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -569,7 +609,6 @@
       </section>      
 
     <!-- Footer -->
-
     <footer id="footer" class="bg-stone text-cream py-12">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
@@ -642,6 +681,11 @@
             </nav>
         </div>
     </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 
     <script>
     document.addEventListener('DOMContentLoaded', () => {
