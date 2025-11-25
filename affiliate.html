@@ -50,11 +50,10 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -94,9 +93,12 @@
         </div>
     </header>
 
-<section id="hero" class="relative h-[500px] flex items-center justify-center overflow-hidden">
+    <section id="hero" class="relative h-[500px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e7bdfad614-0b072205d19161147e72.png" alt="luxury wellness products arranged on marble surface, soft natural lighting, minimalist aesthetic" />
+            <img class="w-full h-full object-cover" 
+                loading="lazy"
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e7bdfad614-0b072205d19161147e72.png" 
+                alt="luxury wellness products arranged on marble surface, soft natural lighting, minimalist aesthetic" />
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         
@@ -201,15 +203,17 @@
                     Travel & Planning Essentials
                 </h2>
                 
-                <div class="grid md:grid-cols-2 gap-8 mb-12">
-                    <div id="service-travel-insurance" class="flex gap-6 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-48 h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/226604a91e-1dbd382dc327b42f0c11.png" alt="travel insurance documents on elegant desk, Italian passport, professional styling" />
-                        <div class="p-6 flex-1">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+                    
+                    <div id="service-travel-insurance" class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/226604a91e-1dbd382dc327b42f0c11.png" alt="travel insurance documents on elegant desk, Italian passport, professional styling" />
+                        
+                        <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Insurance</span>
                                 <span class="text-gray-500 text-sm ml-3">Recommended</span>
                             </div>
-                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">WorldNomads Travel Insurance</h3>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">WorldNomads Travel Insurance</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Comprehensive coverage for yoga retreat leaders and participants traveling to Italy. Includes activity coverage.</p>
                             <div class="flex items-center justify-between">
                                 <span class="text-lg text-sage font-semibold">From £45/week</span>
@@ -220,14 +224,15 @@
                         </div>
                     </div>
 
-                    <div id="service-currency-exchange" class="flex gap-6 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-48 h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a3897b8131-25ad9f0342a608598e89.png" alt="wise money transfer app on phone, euros and pounds, modern financial setup" />
-                        <div class="p-6 flex-1">
+                    <div id="service-currency-exchange" class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a3897b8131-25ad9f0342a608598e89.png" alt="wise money transfer app on phone, euros and pounds, modern financial setup" />
+                        
+                        <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Finance</span>
                                 <span class="text-gray-500 text-sm ml-3">Best Rates</span>
                             </div>
-                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">Wise Multi-Currency Account</h3>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Wise Multi-Currency Account</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Save on international transfers and currency exchange. Perfect for paying Italian venues and managing retreat finances.</p>
                             <div class="flex items-center justify-between">
                                 <span class="text-lg text-sage font-semibold">0.5% fees</span>
@@ -238,14 +243,15 @@
                         </div>
                     </div>
 
-                    <div id="service-retreat-planning" class="flex gap-6 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-48 h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dbb0e09eb4-fa440cb782f860691601.png" alt="retreat planning software on laptop screen, organized calendar and booking system" />
-                        <div class="p-6 flex-1">
+                    <div id="service-retreat-planning" class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dbb0e09eb4-fa440cb782f860691601.png" alt="retreat planning software on laptop screen, organized calendar and booking system" />
+                        
+                        <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Software</span>
                                 <span class="text-gray-500 text-sm ml-3">Professional</span>
                             </div>
-                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">Retreat Guru Platform</h3>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Retreat Guru Platform</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">All-in-one platform for managing bookings, payments, and communications for your Italian retreat.</p>
                             <div class="flex items-center justify-between">
                                 <span class="text-lg text-sage font-semibold">From £99/month</span>
@@ -256,14 +262,15 @@
                         </div>
                     </div>
 
-                    <div id="service-language-app" class="flex gap-6 bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-48 h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e098e18941-6a65c728d1a89894b29c.png" alt="italian language learning app on tablet, elegant study setup with coffee" />
-                        <div class="p-6 flex-1">
+                    <div id="service-language-app" class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e098e18941-6a65c728d1a89894b29c.png" alt="italian language learning app on tablet, elegant study setup with coffee" />
+                        
+                        <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Language</span>
                                 <span class="text-gray-500 text-sm ml-3">Essential</span>
                             </div>
-                            <h3 class="font-playfair text-2xl font-semibold mb-3 text-stone">Babbel Italian Course</h3>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Babbel Italian Course</h3>
                             <p class="text-gray-600 mb-4 leading-relaxed">Learn essential Italian phrases for retreat leaders. Includes wellness and hospitality vocabulary.</p>
                             <div class="flex items-center justify-between">
                                 <span class="text-lg text-sage font-semibold">£9.99/month</span>
@@ -347,30 +354,6 @@
         </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section id="newsletter" class="py-20 bg-cream">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-stone mb-8">
-                    Stay Inspired
-                </h2>
-                <p class="text-xl text-gray-600 mb-12">
-                    Get weekly insights, venue spotlights, and retreat planning tips delivered to your inbox.
-                </p>
-                
-                <form class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-2xl mx-auto">
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-sage/50">
-                        <button type="submit" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300">
-                            Subscribe
-                        </button>
-                    </div>
-                    <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe anytime. Your privacy is protected.</p>
-                </form>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
     <footer id="footer" class="bg-stone text-cream py-12">
         <div class="container mx-auto px-6">
@@ -426,6 +409,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 
     <script>
         // Smooth scrolling for navigation links
