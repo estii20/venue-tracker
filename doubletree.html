@@ -39,17 +39,15 @@
 
     <!-- Canonical -->
     <link rel="canonical" href="https://www.italianretreatvenues.com/doubletree.html">
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
 
     <!-- ✅ Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -71,9 +69,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a>  
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -94,20 +96,21 @@
 
     <section id="venue-hero" class="relative h-[600px] flex items-center justify-center overflow-hidden pt-20">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/eb3221f6f3-38f6fb029f4ec48b897d.png" alt="DoubleTree Hilton Trieste exterior modern hotel building city center Italian architecture urban luxury" />
+            <img 
+                class="w-full h-full object-cover" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/eb3221f6f3-38f6fb029f4ec48b897d.png" 
+                alt="DoubleTree Hilton Trieste exterior modern hotel building city center Italian architecture urban luxury" 
+                loading="lazy"
+            />
             <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
         <div class="relative z-10 text-center text-white max-w-4xl px-6">
-            <h1 class="font-playfair text-5xl md:text-6xl font-bold mb-6 leading-tight">
+            <h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
                 DoubleTree by Hilton Trieste
             </h1>
-            <p class="text-xl md:text-2xl mb-4 font-light">
+            <p class="block text-3xl md:text-4xl font-light mt-4">
                 Urban Wellness Hotel • Central Trieste
-            </p>
-            <p class="text-lg mb-8 opacity-90 max-w-2xl mx-auto">
-                Modern luxury meets Italian elegance in the heart of Trieste, 
-                perfect for urban retreat experiences with comprehensive wellness facilities
             </p>
         </div>
     </section>
@@ -146,9 +149,24 @@
                     </div>
                     
                     <div class="grid grid-cols-2 gap-4">
-                        <img class="w-full h-64 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b651fb1e2f-53cf575de3654603aa57.png" alt="DoubleTree Trieste hotel lobby modern interior design Italian hospitality welcoming atmosphere" />
-                        <img class="w-full h-64 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a50b6670fb-09d21050e178ba68cd73.png" alt="Trieste city center historic architecture Italian streets pedestrian area cultural charm" />
-                        <img class="w-full h-64 object-cover rounded-lg col-span-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/af677e4025-b3eac27bded63de59f55.png" alt="DoubleTree Trieste hotel exterior evening lighting modern facade urban setting Italian city" />
+                        <img 
+                            class="w-full h-64 object-cover rounded-lg" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b651fb1e2f-53cf575de3654603aa57.png" 
+                            alt="DoubleTree Trieste hotel lobby modern interior design Italian hospitality welcoming atmosphere" 
+                            loading="lazy"
+                        />
+                        <img 
+                            class="w-full h-64 object-cover rounded-lg" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a50b6670fb-09d21050e178ba68cd73.png" 
+                            alt="Trieste city center historic architecture Italian streets pedestrian area cultural charm" 
+                            loading="lazy"
+                        />
+                        <img 
+                            class="w-full h-64 object-cover rounded-lg col-span-2" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/af677e4025-b3eac27bded63de59f55.png" 
+                            alt="DoubleTree Trieste hotel exterior evening lighting modern facade urban setting Italian city" 
+                            loading="lazy"
+                        />
                     </div>
                 </div>
             </div>
@@ -166,7 +184,12 @@
                 
                 <div class="grid lg:grid-cols-3 gap-8 mb-16">
                     <div id="spa-facilities" class="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/64c9e211c6-19a985269e2e45287213.png" alt="DoubleTree Trieste spa sauna Turkish bath wellness center modern design relaxation" />
+                        <img 
+                            class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/64c9e211c6-19a985269e2e45287213.png" 
+                            alt="DoubleTree Trieste spa sauna Turkish bath wellness center modern design relaxation" 
+                            loading="lazy"
+                        />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Spa & Sauna</h3>
                             <p class="text-gray-600 mb-4">Complete spa experience with sauna, Turkish bath, and emotional showers for deep relaxation</p>
@@ -188,7 +211,12 @@
                     </div>
 
                     <div id="fitness-center" class="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/19e15f972a-a43fde426b6c2fbcf62b.png" alt="DoubleTree Trieste fitness center Technogym equipment modern gym yoga space hotel wellness" />
+                        <img 
+                            class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/19e15f972a-a43fde426b6c2fbcf62b.png" 
+                            alt="DoubleTree Trieste fitness center Technogym equipment modern gym yoga space hotel wellness" 
+                            loading="lazy"
+                        />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Fitness Center</h3>
                             <p class="text-gray-600 mb-4">State-of-the-art Technogym equipment with potential for private yoga sessions</p>
@@ -210,7 +238,12 @@
                     </div>
 
                     <div id="treatment-rooms" class="bg-white rounded-lg overflow-hidden shadow-lg">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/83bc223139-adf0592b2d7699466753.png" alt="DoubleTree Trieste massage treatment room spa therapy wellness relaxation modern luxury" />
+                        <img 
+                            class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/83bc223139-adf0592b2d7699466753.png" 
+                            alt="DoubleTree Trieste massage treatment room spa therapy wellness relaxation modern luxury" 
+                            loading="lazy"
+                        />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Treatment Rooms</h3>
                             <p class="text-gray-600 mb-4">Professional massage and treatment cabins for holistic wellness experiences</p>
@@ -285,9 +318,24 @@
                     </div>
                     
                     <div class="grid grid-cols-2 gap-4">
-                        <img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/13f3cb4cde-c034355538c25417167a.png" alt="DoubleTree Trieste guest room modern design comfortable bed contemporary decor Italian hotel" />
-                        <img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e0640016b0-f07a59dba50582db65a7.png" alt="DoubleTree Trieste superior room city view modern amenities luxury comfort urban hotel" />
-                        <img class="w-full h-48 object-cover rounded-lg col-span-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/deb33d8224-46c061fecb49c9b88800.png" alt="DoubleTree Trieste hotel common area lobby lounge modern interior group gathering space" />
+                        <img 
+                            class="w-full h-48 object-cover rounded-lg" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/13f3cb4cde-c034355538c25417167a.png" 
+                            alt="DoubleTree Trieste guest room modern design comfortable bed contemporary decor Italian hotel" 
+                            loading="lazy"
+                        />
+                        <img 
+                            class="w-full h-48 object-cover rounded-lg" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e0640016b0-f07a59dba50582db65a7.png" 
+                            alt="DoubleTree Trieste superior room city view modern amenities luxury comfort urban hotel" 
+                            loading="lazy"
+                        />
+                        <img 
+                            class="w-full h-48 object-cover rounded-lg col-span-2" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/deb33d8224-46c061fecb49c9b88800.png" 
+                            alt="DoubleTree Trieste hotel common area lobby lounge modern interior group gathering space" 
+                            loading="lazy"
+                        />
                     </div>
                 </div>
             </div>
@@ -302,7 +350,12 @@
                 <div class="grid lg:grid-cols-2 gap-16">
                     <div id="dining-section">
                         <h3 class="font-playfair text-3xl font-bold text-stone mb-6">Hotel Dining & Catering</h3>
-                        <img class="w-full h-64 object-cover rounded-lg mb-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2de1420e6d-fa3843cb8786994529ae.png" alt="DoubleTree Trieste restaurant dining room Italian cuisine healthy breakfast hotel catering" />
+                        <img 
+                            class="w-full h-64 object-cover rounded-lg mb-6" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2de1420e6d-fa3843cb8786994529ae.png" 
+                            alt="DoubleTree Trieste restaurant dining room Italian cuisine healthy breakfast hotel catering" 
+                            loading="lazy"
+                        />
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                             The hotel's restaurant offers excellent Italian cuisine with options to accommodate dietary 
                             requirements. Group dining arrangements can be made for retreat participants, including 
@@ -326,7 +379,12 @@
 
                     <div id="location-section">
                         <h3 class="font-playfair text-3xl font-bold text-stone mb-6">Prime City Location</h3>
-                        <img class="w-full h-64 object-cover rounded-lg mb-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/604c1da593-810681b5c54a519d468f.png" alt="Trieste city center historic square Italian architecture cultural attractions pedestrian area" />
+                        <img 
+                            class="w-full h-64 object-cover rounded-lg mb-6" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/604c1da593-810681b5c54a519d468f.png" 
+                            alt="Trieste city center historic square Italian architecture cultural attractions pedestrian area" 
+                            loading="lazy"
+                        />
                         <p class="text-lg text-gray-700 mb-6 leading-relaxed">
                             Perfectly positioned in central Trieste, the hotel provides easy access to the city's rich 
                             cultural heritage, beautiful piazzas, and the stunning Adriatic coastline - ideal for retreat 
@@ -403,7 +461,12 @@
                     </div>
                     
                     <div>
-                        <img class="w-full h-96 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e39cc6f1a4-ae29fd8d277d35d5cd06.png" alt="Trieste Piazza Unità d" />
+                        <img 
+                            class="w-full h-96 object-cover rounded-lg" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/e39cc6f1a4-ae29fd8d277d35d5cd06.png" 
+                            alt="Trieste Piazza Unità d" 
+                            loading="lazy"
+                        />
                     </div>
                 </div>
             </div>
@@ -491,20 +554,36 @@
             <h3 class="font-playfair text-3xl font-semibold text-stone mb-8">Follow Along for Inspiration</h3>
             <div class="flex justify-center space-x-4 mb-8">
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
-                    <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" alt="Italian villa courtyard with morning light" />
+                    <img 
+                        class="w-full h-full object-cover rounded-lg" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
+                        alt="Italian villa courtyard with morning light" 
+                        loading="lazy"
+                    />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
-                    <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" alt="yoga class in Tuscan olive grove" />
+                    <img 
+                        class="w-full h-full object-cover rounded-lg"           
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
+                        alt="yoga class in Tuscan olive grove" 
+                        loading="lazy"
+                    />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
-                    <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" alt="luxury spa treatment room in Italy" />
+                    <img 
+                        class="w-full h-full object-cover rounded-lg"           
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
+                        alt="luxury spa treatment room in Italy" 
+                        loading="lazy"
+                    />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
-                    <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" alt="Italian countryside sunset view" />
+                    <img 
+                        class="w-full h-full object-cover rounded-lg"           
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
+                        alt="Italian countryside sunset view" 
+                        loading="lazy"
+                    />                                      
                 </div>
             </div>
             <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -605,6 +684,11 @@
             </nav>
         </div>
     </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
 
     <script>
         // Smooth scrolling for navigation links
