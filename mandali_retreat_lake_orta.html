@@ -43,14 +43,15 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -72,9 +73,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a>  
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -95,8 +100,9 @@
  <section id="home" class="relative h-[600px] flex items-center justify-center overflow-hidden">
     <div class="absolute inset-0 z-0">
         <img class="w-full h-full object-cover" 
-        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-5.webp?bwg=1739833509" 
-        alt="Mandali Retreat, Lake Orta, Italy, sweeping views and the integration of the architecture with the natural landscape" />
+            src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-5.webp?bwg=1739833509" 
+            alt="Mandali Retreat, Lake Orta, Italy, sweeping views and the integration of the architecture with the natural landscape" 
+            loading="lazy"/>
         <div class="absolute inset-0 bg-black/30"></div>
     </div>
     
@@ -170,28 +176,33 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 <div class="md:col-span-2 lg:col-span-2">
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-4.webp?bwg=1739833509" 
-                    alt="luxury spa treatment room at coastal resort, minimalist design, sea views, soft lighting, wellness atmosphere" />
+                        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-4.webp?bwg=1739833509" 
+                        alt="luxury spa treatment room at coastal resort, minimalist design, sea views, soft lighting, wellness atmosphere" 
+                        loading="lazy"/>
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-accomodation-6.webp?bwg=1739834734" 
-                    alt="infinity pool overlooking Adriatic Sea, luxury resort, sunset lighting, modern architecture" />
+                        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-accomodation-6.webp?bwg=1739834734" 
+                        alt="infinity pool overlooking Adriatic Sea, luxury resort, sunset lighting, modern architecture" 
+                        loading="lazy"/>
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-accomodation-7.webp?bwg=1739834734" 
-                    alt="yoga class on outdoor terrace with sea views, morning light, peaceful setting, luxury resort" />
+                        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-accomodation-7.webp?bwg=1739834734" 
+                        alt="yoga class on outdoor terrace with sea views, morning light, peaceful setting, luxury resort" 
+                        loading="lazy"/>
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-accomodation-2.webp?bwg=1739834734" 
-                    alt="elegant hotel suite with sea view balcony, modern luxury design, neutral tones" />
+                        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-accomodation-2.webp?bwg=1739834734" 
+                        alt="elegant hotel suite with sea view balcony, modern luxury design, neutral tones" 
+                        loading="lazy"/>
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-kitchen-1.webp?bwg=1739833815" 
-                    alt="gourmet healthy breakfast spread, Mediterranean cuisine, fresh ingredients, elegant presentation" />
+                        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-kitchen-1.webp?bwg=1739833815" 
+                        alt="gourmet healthy breakfast spread, Mediterranean cuisine, fresh ingredients, elegant presentation" 
+                        loading="lazy"/>
                 </div>
             </div>
             
@@ -383,8 +394,9 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Orta_San_Giulio.jpg" 
-                    alt="Charming lakeside town of Orta San Giulio with colorful buildings and piazza" />
+                        src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Orta_San_Giulio.jpg" 
+                        alt="Charming lakeside town of Orta San Giulio with colorful buildings and piazza" 
+                        loading="lazy"/>
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Orta San Giulio</h3>
                     <p class="text-gray-600">10-15 min drive • A picturesque medieval village with charming 
                         cobbled streets and lakeside piazzas.</p>
@@ -392,8 +404,9 @@
                 
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/OrtaSanGiulioAug132024_02.jpg/800px-OrtaSanGiulioAug132024_02.jpg" 
-                    alt="Isola San Giulio, a small island with a basilica and monastery on Lake Orta" />
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/OrtaSanGiulioAug132024_02.jpg/800px-OrtaSanGiulioAug132024_02.jpg" 
+                        alt="Isola San Giulio, a small island with a basilica and monastery on Lake Orta" 
+                        loading="lazy"/>
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Isola San Giulio</h3>
                     <p class="text-gray-600">5 min boat ride from Orta • 
                         A serene island featuring a beautiful basilica and walking path of silence.</p>
@@ -401,8 +414,9 @@
                 
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sacro_Monte_di_Orta_cap.15.JPG/1280px-Sacro_Monte_di_Orta_cap.15.JPG" 
-                    alt="Sacro Monte di Orta, a UNESCO site with chapels and panoramic lake views" />
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Sacro_Monte_di_Orta_cap.15.JPG/1280px-Sacro_Monte_di_Orta_cap.15.JPG" 
+                        alt="Sacro Monte di Orta, a UNESCO site with chapels and panoramic lake views" 
+                        loading="lazy"/>
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Sacro Monte di Orta</h3>
                     <p class="text-gray-600">5 min drive / 20 min walk • 
                         UNESCO World Heritage site with chapels and stunning lake vistas.</p>
@@ -410,8 +424,9 @@
                 
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-2.webp?bwg=1739833509" 
-                    alt="Lake Maggiore with mountains and Borromean Islands in the foreground" />
+                        src="https://mandali.org/wp-content/uploads/photo-gallery/imported_from_media_libray/gallery-outside-2.webp?bwg=1739833509" 
+                        alt="Lake Maggiore with mountains and Borromean Islands in the foreground" 
+                        loading="lazy"/>
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Lake Maggiore</h3>
                     <p class="text-gray-600">~30-40 min drive • Explore one of Italy's 
                         largest and most famous lakes, with stunning islands and gardens.</p>
@@ -452,19 +467,27 @@
             <div class="flex justify-center space-x-4 mb-8">
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" alt="Italian villa courtyard with morning light" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
+                        alt="Italian villa courtyard with morning light" 
+                        loading="lazy"/>
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" alt="yoga class in Tuscan olive grove" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
+                        alt="yoga class in Tuscan olive grove" 
+                        loading="lazy"/>
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" alt="luxury spa treatment room in Italy" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
+                        alt="luxury spa treatment room in Italy" 
+                        loading="lazy"/>
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" alt="Italian countryside sunset view" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
+                        alt="Italian countryside sunset view" 
+                        loading="lazy"/>
                 </div>
             </div>
             <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -561,6 +584,12 @@
             </nav>
         </div>
     </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
 
     <script>
         // Smooth scrolling for navigation links

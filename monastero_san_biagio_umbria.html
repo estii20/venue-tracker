@@ -47,14 +47,14 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+        
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -76,9 +76,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -99,13 +103,14 @@
     <section id="home" class="relative h-[600px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img class="w-full h-full object-cover" 
-            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/10527473.jpg?k=2aea2ff762c7f4d2e3c43ed8e3dd16d5d8105659b99b8d841298a6243d5954ff&o=" 
-            alt="Monastero San Biagio, a historic monastery hotel in Umbria, Italy, surrounded by green hills" />
+                src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/10527473.jpg?k=2aea2ff762c7f4d2e3c43ed8e3dd16d5d8105659b99b8d841298a6243d5954ff&o=" 
+                alt="Monastero San Biagio, a historic monastery hotel in Umbria, Italy, surrounded by green hills"
+                loading="lazy" />
             <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
         <div class="relative z-10 text-center text-white max-w-4xl px-6">
-            <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-4 leading-tight">
+            <h1 class="font-playfair text-4xl md:text-4xl font-bold mb-4 leading-tight">
                 Monastero San Biagio, Umbria
             </h1>
             <p class="text-xl md:text-2xl mb-2 font-light text-white">Historic Serenity & Holistic Wellness</p>
@@ -171,28 +176,33 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                     <div class="md:col-span-2 lg:col-span-2">
                         <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/80295221.jpg?k=07bd09123ceeb56b46687f1470aeff170b7dbe7d5b211eadee70493057ff27ad&o=" 
-                        alt="Exterior of Monastero San Biagio in Umbria during summer" />
+                            loading="lazy"
+                            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/80295221.jpg?k=07bd09123ceeb56b46687f1470aeff170b7dbe7d5b211eadee70493057ff27ad&o=" 
+                            alt="Exterior of Monastero San Biagio in Umbria during summer" />
                     </div>
                     <div>
                         <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/15576504.jpg?k=94ae359a7c199476c32b4996b747f4e7ec3cf9a37d3c23d9480e7b8e028568e2&o=" 
-                        alt="Interior of the spa at Monastero San Biagio" />
+                            loading="lazy"
+                            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/15576504.jpg?k=94ae359a7c199476c32b4996b747f4e7ec3cf9a37d3c23d9480e7b8e028568e2&o=" 
+                            alt="Interior of the spa at Monastero San Biagio" />
                     </div>
                     <div>
                         <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/125913115.jpg?k=f79798e5a5086b08a5572cfdd32eb36821d8aa18f2439fbc45ad9af6a00ced97&o=" 
-                        alt="Yoga practice at Monastero San Biagio" />
+                            loading="lazy"
+                            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/125913115.jpg?k=f79798e5a5086b08a5572cfdd32eb36821d8aa18f2439fbc45ad9af6a00ced97&o=" 
+                            alt="Yoga practice at Monastero San Biagio" />
                     </div>
                     <div>
                         <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/125913002.jpg?k=a4e510c10b194359a15138f6a6397c0025c3741ab7d195fc70159231bbfa68ae&o=" 
-                        alt="Dining area of the restaurant at Monastero San Biagio" />
+                            loading="lazy"
+                            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/125913002.jpg?k=a4e510c10b194359a15138f6a6397c0025c3741ab7d195fc70159231bbfa68ae&o=" 
+                            alt="Dining area of the restaurant at Monastero San Biagio" />
                     </div>
                     <div>
                         <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                        src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/9772591.jpg?k=a1c43940866e92a5972aa51882ba09beb93ddd355548bf6257ec1b3b93dabd7e&o=" 
-                        alt="Stunning countryside views surrounding Monastero San Biagio in Umbria" />
+                            loading="lazy"
+                            src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/9772591.jpg?k=a1c43940866e92a5972aa51882ba09beb93ddd355548bf6257ec1b3b93dabd7e&o=" 
+                            alt="Stunning countryside views surrounding Monastero San Biagio in Umbria" />
                     </div>
                 </div>
                 
@@ -380,32 +390,36 @@
                 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="text-center">
                         <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Assisi_San_Francesco_BW_2.JPG/1280px-Assisi_San_Francesco_BW_2.JPG" 
-                        alt="Basilica of Saint Francis of Assisi, a UNESCO World Heritage site" />
+                            loading="lazy"
+                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Assisi_San_Francesco_BW_2.JPG/1280px-Assisi_San_Francesco_BW_2.JPG" 
+                            alt="Basilica of Saint Francis of Assisi, a UNESCO World Heritage site" />
                         <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Assisi</h3>
                         <p class="text-gray-600">~25 min drive • Explore the spiritual birthplace of St. Francis and the stunning Basilica, a UNESCO World Heritage site.</p>
                     </div>
                     
                     <div class="text-center">
                         <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                        src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/94/d7/44/photo3jpg.jpg?w=1400&h=-1&s=1" 
-                        alt="Piazza Grande in Gubbio, a well-preserved medieval hill town in Umbria" />
+                            loading="lazy"
+                            src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0f/94/d7/44/photo3jpg.jpg?w=1400&h=-1&s=1" 
+                            alt="Piazza Grande in Gubbio, a well-preserved medieval hill town in Umbria" />
                         <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Gubbio</h3>
                         <p class="text-gray-600">~35 min drive • Wander through one of Umbria's most picturesque medieval hill towns, famous for its grand piazza.</p>
                     </div>
                     
                     <div class="text-center">
                         <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                        src="https://tourismmedia.italia.it/is/image/mitur/20210507140033-shutterstock-482424526-1?wid=2160&hei=1320&fit=constrain,1&fmt=webp" 
-                        alt="Historic center of Perugia, the capital of Umbria, with ancient buildings" />
+                            loading="lazy"
+                            src="https://tourismmedia.italia.it/is/image/mitur/20210507140033-shutterstock-482424526-1?wid=2160&hei=1320&fit=constrain,1&fmt=webp" 
+                            alt="Historic center of Perugia, the capital of Umbria, with ancient buildings" />
                         <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Perugia</h3>
                         <p class="text-gray-600">~50 min drive • Discover Umbria's vibrant capital, renowned for its art, history, and delicious chocolate.</p>
                     </div>
                     
                     <div class="text-center">
                         <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                        src="https://winetourscortona.com/static/img/tours/wine_tour_montefalco/01.jpg" 
-                        alt="Vineyards and rolling hills of the Montefalco wine region in Umbria" />
+                            loading="lazy"
+                            src="https://winetourscortona.com/static/img/tours/wine_tour_montefalco/01.jpg" 
+                            alt="Vineyards and rolling hills of the Montefalco wine region in Umbria" />
                         <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Montefalco Wine Region</h3>
                         <p class="text-gray-600">~45 min drive • Indulge in wine tastings and explore charming villages in the renowned Sagrantino wine area.</p>
                     </div>
@@ -445,23 +459,27 @@
                 <div class="flex justify-center space-x-4 mb-8">
                     <div class="w-24 h-24 bg-gray-200 rounded-lg">
                         <img class="w-full h-full object-cover rounded-lg" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
-                        alt="Italian villa courtyard with morning light" />
+                            loading="lazy"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
+                            alt="Italian villa courtyard with morning light" />
                     </div>
                     <div class="w-24 h-24 bg-gray-200 rounded-lg">
                         <img class="w-full h-full object-cover rounded-lg" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
-                        alt="yoga class in Tuscan olive grove" />
+                            loading="lazy"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
+                            alt="yoga class in Tuscan olive grove" />
                     </div>
                     <div class="w-24 h-24 bg-gray-200 rounded-lg">
                         <img class="w-full h-full object-cover rounded-lg" 
+                            loading="lazy"  
                         src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
                         alt="luxury spa treatment room in Italy" />
                     </div>
                     <div class="w-24 h-24 bg-gray-200 rounded-lg">
                         <img class="w-full h-full object-cover rounded-lg" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
-                        alt="Italian countryside sunset view" />
+                            loading="lazy"  
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
+                            alt="Italian countryside sunset view" />
                     </div>
                 </div>
                 <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -558,6 +576,12 @@
             </nav>
         </div>
     </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
 
     <script>
         // Smooth scrolling for navigation links
