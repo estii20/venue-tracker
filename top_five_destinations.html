@@ -37,14 +37,14 @@
     <!-- Canonical -->
     <link rel="canonical" href="https://italianretreatvenues.com/top_five_destinations.html">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+     
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -60,25 +60,28 @@
 <body class="font-inter text-gray-800">
 
     <!-- Header -->
-
     <header id="header" class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
         <div class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
-                    <a href="index.html#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
-                    <a href="index.html#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venues</a>
-                    <a href="index.html#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
-                    <a href="index.html#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
+                    <a href="#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
+                    <a href="#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venues</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer" aria-label="Visit the Italian Retreat Venues Blog">Blog</a>
                 </nav>
-                <button class="md:hidden" id="openMenu">
+                <button class="md:hidden" id="openMenu" aria-label="Open mobile menu">
                     <i class="fas fa-bars text-xl text-stone"></i>
                 </button>
             </div>
@@ -88,7 +91,11 @@
     <!-- Hero Section -->
     <section id="hero" class="relative h-[500px] flex items-center justify-center overflow-hidden mt-20">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9b24f7f27e-d9f897803df11406b3ee.png" alt="Friuli Venezia Giulia mountain landscape with yoga retreat venue, golden hour lighting, serene Italian countryside" />
+            <img class="w-full h-full object-cover" 
+            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9b24f7f27e-d9f897803df11406b3ee.png" 
+            alt="Friuli Venezia Giulia mountain landscape with yoga retreat venue, golden hour lighting, serene Italian countryside" 
+            loading="lazy"
+            />
             <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
@@ -138,7 +145,11 @@
 
                 <!-- Venue 1 -->
                 <div id="venue-1" class="mb-16 bg-cream rounded-lg overflow-hidden">
-                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dcaa654dd4-77654ca890006c6139b5.png" alt="Tivoli Portopiccolo luxury coastal resort with yoga deck overlooking Adriatic Sea, modern architecture" />
+                    <img class="w-full h-80 object-cover" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/dcaa654dd4-77654ca890006c6139b5.png" 
+                    alt="Tivoli Portopiccolo luxury coastal resort with yoga deck overlooking Adriatic Sea, modern architecture" 
+                    loading="lazy"
+                    />  
                     <div class="p-8">
                         <div class="flex items-center mb-4">
                             <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium mr-4">Luxury Resort</span>
@@ -178,7 +189,9 @@
                 <div id="venue-2" class="mb-16 bg-cream rounded-lg overflow-hidden">
                     <img class="w-full h-80 object-cover" 
                     src="https://storage.googleapis.com/uxpilot-auth.appspot.com/709224f189-a28cf1faf1650a2d5eb7.png" 
-                    alt="Mandali Retreat alpine lake setting with yoga pavilion, mountain backdrop, peaceful atmosphere" />
+                    alt="Mandali Retreat alpine lake setting with yoga pavilion, mountain backdrop, peaceful atmosphere" 
+                    loading="lazy"
+                    />
                     <div class="p-8">
                         <div class="flex items-center mb-4">
                             <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium mr-4">Dedicated Retreat</span>
@@ -221,7 +234,9 @@
                 <div id="venue-3" class="mb-16 bg-cream rounded-lg overflow-hidden">
                     <img class="w-full h-80 object-cover" 
                     src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0037a41e65-8a2957964213487a2076.png" 
-                    alt="Sunflower Retreats historic Italian palace with yoga studio, garden terrace, elegant architecture" />
+                    alt="Sunflower Retreats historic Italian palace with yoga studio, garden terrace, elegant architecture" 
+                    loading="lazy"
+                    />
                     <div class="p-8">
                         <div class="flex items-center mb-4">
                             <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium mr-4">Group Hire</span>
@@ -261,7 +276,11 @@
 
                 <!-- Venue 4 -->
                 <div id="venue-4" class="mb-16 bg-cream rounded-lg overflow-hidden">
-                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bb72529fc8-2cfb377e3d8b9cc28368.png" alt="DoubleTree Hilton Trieste modern hotel spa with yoga space, urban luxury setting" />
+                    <img class="w-full h-80 object-cover" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/bb72529fc8-2cfb377e3d8b9cc28368.png" 
+                    alt="DoubleTree Hilton Trieste modern hotel spa with yoga space, urban luxury setting" 
+                    loading="lazy"
+                    />
                     <div class="p-8">
                         <div class="flex items-center mb-4">
                             <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium mr-4">City Hotel</span>
@@ -300,7 +319,11 @@
 
                 <!-- Venue 5 -->
                 <div id="venue-5" class="mb-16 bg-cream rounded-lg overflow-hidden">
-                    <img class="w-full h-80 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/568376385a-899109381103c8b147f7.png" alt="Portopiccolo luxury apartments with sea view yoga terrace, modern Italian coastal design" />
+                    <img class="w-full h-80 object-cover" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/568376385a-899109381103c8b147f7.png" 
+                    alt="Portopiccolo luxury apartments with sea view yoga terrace, modern Italian coastal design" 
+                    loading="lazy"
+                    />
                     <div class="p-8">
                         <div class="flex items-center mb-4">
                             <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium mr-4">Luxury Apartments</span>
@@ -400,7 +423,9 @@
                     <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                         <img class="w-full h-48 object-cover" 
                         src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d2f97c1874-8a4d03ce84bfd95da80d.png" 
-                        alt="Trieste coastal yoga session, golden hour, Italian Adriatic sea" />
+                        alt="Trieste coastal yoga session, golden hour, Italian Adriatic sea" 
+                        loading="lazy"
+                        />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Why Trieste is Perfect for Yoga Retreats</h3>
                             <p class="text-gray-600 mb-4">Discover the unique cultural blend that makes this coastal city ideal for wellness experiences.</p>
@@ -413,7 +438,9 @@
                     <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                         <img class="w-full h-48 object-cover" 
                         src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2086a262a8-17a1a460ed1d89d98f72.png" 
-                        alt="Italian retreat planning checklist, elegant desk setup, wellness planning materials" />
+                        alt="Italian retreat planning checklist, elegant desk setup, wellness planning materials" 
+                        loading="lazy"
+                        />
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Essential Retreat Planning Checklist</h3>
                             <p class="text-gray-600 mb-4">Everything you need to know before booking your Italian wellness retreat venue.</p>
@@ -424,7 +451,11 @@
                     </article>
 
                     <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9928978d85-91fd144ec2b537698783.png" alt="Italian healthy cuisine for yoga retreats, organic local ingredients, beautiful presentation" />
+                        <img class="w-full h-48 object-cover" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9928978d85-91fd144ec2b537698783.png" 
+                        alt="Italian healthy cuisine for yoga retreats, organic local ingredients, beautiful presentation" 
+                        loading="lazy"
+                        />  
                         <div class="p-6">
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Creating Nourishing Retreat Menus</h3>
                             <p class="text-gray-600 mb-4">How to work with Italian venues to create healthy, locally-sourced menus for your retreats.</p>
@@ -434,30 +465,6 @@
                         </div>
                     </article>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup -->
-    <section id="newsletter" class="py-20 bg-cream">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center">
-                <h2 class="font-playfair text-4xl md:text-5xl font-bold text-stone mb-8">
-                    Stay Inspired
-                </h2>
-                <p class="text-xl text-gray-600 mb-12">
-                    Get monthly insights, venue spotlights, and retreat planning tips delivered to your inbox.
-                </p>
-                
-                <form class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-2xl mx-auto">
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-sage/50">
-                        <button type="submit" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300">
-                            Subscribe
-                        </button>
-                    </div>
-                    <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe anytime. Your privacy is protected.</p>
-                </form>
             </div>
         </div>
     </section>
@@ -518,6 +525,29 @@
         </div>
     </footer>
 
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="mobileMenu">
+        <div class="bg-white h-full w-64 p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>
+                <a href="#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -529,6 +559,11 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
                 }
             });
         });
@@ -545,17 +580,33 @@
             }
         });
 
-        // Article hover effects
-        document.querySelectorAll('article').forEach(article => {
-            article.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-4px)';
-            });
-            
-            article.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
+        // Mobile menu toggle
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        openMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
         });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside of it
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add event listeners for mobile menu links to close menu on click
+        document.getElementById('mobileAbout').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileHowItWorks').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
     </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>

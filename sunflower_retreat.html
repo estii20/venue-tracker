@@ -26,9 +26,6 @@
     <meta name="twitter:site" content="@ItalianRetreats">
     <meta name="twitter:creator" content="@ItalianRetreats">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
@@ -55,9 +52,13 @@
 
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -79,9 +80,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -102,7 +107,10 @@
 
     <section id="venue-hero" class="relative h-[600px] flex items-center justify-center overflow-hidden pt-20">
     <div class="absolute inset-0 z-0">
-        <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a570839703-cf0aba9d76013539750c.png" alt="historic Italian palace yoga studio wooden floors natural lighting Casperia Lazio converted Renaissance architecture">
+        <img class="w-full h-full object-cover" 
+            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a570839703-cf0aba9d76013539750c.png" 
+            alt="historic Italian palace yoga studio wooden floors natural lighting Casperia Lazio converted Renaissance architecture"
+            loading="lazy">
         <div class="absolute inset-0 bg-black/30"></div>
     </div>
     <div class="relative z-10 text-center text-white max-w-4xl px-6">
@@ -141,7 +149,20 @@
                 </div>
             </div>
             </div>
-            <div class="grid grid-cols-2 gap-4"><img class="w-full h-64 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9e63de3b4a-96cdea3b38be66d66513.png" alt="Sunflower Retreats Casperia exterior stone facade Renaissance palace Italian hilltop town"> <img class="w-full h-64 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a0911cee77-c841dd0370e26c7897a4.png" alt="medieval Casperia village streets stone buildings Lazio countryside panoramic views"> <img class="w-full h-64 object-cover rounded-lg col-span-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3cf3f57f48-b699f44e60247f050eed.png" alt="Sunflower Retreats garden terrace outdoor yoga platform wooden deck Italian countryside"></div>
+            <div class="grid grid-cols-2 gap-4">
+                <img class="w-full h-64 object-cover rounded-lg" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9e63de3b4a-96cdea3b38be66d66513.png" 
+                    alt="Sunflower Retreats Casperia exterior stone facade Renaissance palace Italian hilltop town"
+                    loading="lazy"> 
+                    <img class="w-full h-64 object-cover rounded-lg" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/a0911cee77-c841dd0370e26c7897a4.png" 
+                    alt="medieval Casperia village streets stone buildings Lazio countryside panoramic views"
+                    loading="lazy"> 
+                <img class="w-full h-64 object-cover rounded-lg col-span-2" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3cf3f57f48-b699f44e60247f050eed.png" 
+                    alt="Sunflower Retreats garden terrace outdoor yoga platform wooden deck Italian countryside"
+                    loading="lazy">
+            </div>
         </div>
         </div>
     </div>
@@ -155,7 +176,10 @@
         <h2 class="font-playfair text-4xl md:text-5xl font-bold text-center text-stone mb-16">Dedicated Yoga Spaces</h2>
         <div class="grid lg:grid-cols-3 gap-8 mb-16">
             <div id="main-studio" class="bg-white rounded-lg overflow-hidden shadow-lg">
-            <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3644d016c5-ebc61f9035f98862b289.png" alt="large yoga studio 50 sqm wooden floors high ceilings natural light Italian palace interior">
+            <img class="w-full h-48 object-cover" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3644d016c5-ebc61f9035f98862b289.png" 
+                alt="large yoga studio 50 sqm wooden floors high ceilings natural light Italian palace interior"
+                loading="lazy">
             <div class="p-6">
                 <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Main Studio</h3>
                 <p class="text-gray-600 mb-4">50 sqm of dedicated practice space with authentic wooden floors and soaring ceilings</p>
@@ -173,7 +197,10 @@
             </div>
             </div>
             <div id="smaller-studio" class="bg-white rounded-lg overflow-hidden shadow-lg">
-            <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5cdc536671-989d768a5db9b923cb05.png" alt="intimate yoga studio 40 sqm cozy atmosphere wooden beams meditation space palace interior">
+            <img class="w-full h-48 object-cover" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5cdc536671-989d768a5db9b923cb05.png" 
+                alt="intimate yoga studio 40 sqm cozy atmosphere wooden beams meditation space palace interior"
+                loading="lazy">
             <div class="p-6">
                 <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Intimate Studio</h3>
                 <p class="text-gray-600 mb-4">40 sqm space perfect for smaller groups, meditation, and specialized workshops</p>
@@ -191,7 +218,10 @@
             </div>
             </div>
             <div id="outdoor-platform" class="bg-white rounded-lg overflow-hidden shadow-lg">
-            <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c60eb998b3-56b156300767dbd7e41c.png" alt="outdoor wooden yoga platform garden setting Italian countryside mountain views sunrise practice">
+            <img class="w-full h-48 object-cover" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c60eb998b3-56b156300767dbd7e41c.png" 
+                alt="outdoor wooden yoga platform garden setting Italian countryside mountain views sunrise practice"
+                loading="lazy">
             <div class="p-6">
                 <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Garden Platform</h3>
                 <p class="text-gray-600 mb-4">Beautiful wooden outdoor platform surrounded by lush gardens and countryside views</p>
@@ -266,7 +296,19 @@
                 </div>
             </div>
             </div>
-            <div class="grid grid-cols-2 gap-4"><img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8e41dee547-5869b5c1366469475383.png" alt="Sunflower Retreats guest room Renaissance palace interior comfortable bed historic architecture"> <img class="w-full h-48 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3c5f037fe8-af3ac8d17c46108c6b4a.png" alt="palace room stone walls wooden beams modern comfort Italian historic accommodation"> <img class="w-full h-48 object-cover rounded-lg col-span-2" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/28489a07b0-e6933f11a1a206901029.png" alt="Sunflower Retreats common area lounge palace interior gathering space retreat participants"></div>
+            <div class="grid grid-cols-2 gap-4">
+                <img class="w-full h-48 object-cover rounded-lg" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8e41dee547-5869b5c1366469475383.png" 
+                alt="Sunflower Retreats guest room Renaissance palace interior comfortable bed historic architecture"
+                loading="lazy">
+                <img class="w-full h-48 object-cover rounded-lg" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/3c5f037fe8-af3ac8d17c46108c6b4a.png" 
+                    alt="palace room stone walls wooden beams modern comfort Italian historic accommodation"
+                    loading="lazy">
+                <img class="w-full h-48 object-cover rounded-lg col-span-2" 
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/28489a07b0-e6933f11a1a206901029.png" 
+                    alt="Sunflower Retreats common area lounge palace interior gathering space retreat participants"
+                    loading="lazy"> 
         </div>
         </div>
     </div>
@@ -365,7 +407,11 @@
                 </div>
             </div>
             </div>
-            <div><img class="w-full h-96 object-cover rounded-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b99b86479b-c6ba615ed92acee79cfa.png" alt="Casperia medieval hilltop town Lazio countryside panoramic view stone buildings Italian village"></div>
+            <div><img class="w-full h-96 object-cover rounded-lg" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b99b86479b-c6ba615ed92acee79cfa.png" 
+                alt="Casperia medieval hilltop town Lazio countryside panoramic view stone buildings Italian village"
+                loading="lazy"> 
+            </div>
         </div>
         </div>
     </div>
@@ -433,19 +479,27 @@
             <div class="flex justify-center space-x-4 mb-8">
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" alt="Italian villa courtyard with morning light" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
+                    alt="Italian villa courtyard with morning light"
+                    loading="lazy">
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" alt="yoga class in Tuscan olive grove" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
+                    alt="yoga class in Tuscan olive grove"
+                    loading="lazy">         
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" alt="luxury spa treatment room in Italy" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
+                    alt="luxury spa treatment room in Italy"
+                    loading="lazy">         
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" alt="Italian countryside sunset view" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
+                    alt="Italian countryside sunset view"
+                    loading="lazy">         
                 </div>
             </div>
             <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -547,6 +601,11 @@
         </div>
     </div>
 
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -607,7 +666,6 @@
         document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
 
     </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
     <script>
         const watchTourBtn = document.getElementById('watchTourBtn');
         const videoModal = document.getElementById('videoModal');

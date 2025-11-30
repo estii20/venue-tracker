@@ -59,14 +59,14 @@
     }
     </script>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
-
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+  
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -88,9 +88,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -180,19 +184,34 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 <div class="md:col-span-2 lg:col-span-2">
-                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/133a988c4b-2abf21021a7f131d6ae5.png" alt="luxury spa treatment room at coastal resort, minimalist design, sea views, soft lighting, wellness atmosphere" />
+                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/133a988c4b-2abf21021a7f131d6ae5.png" 
+                        alt="luxury spa treatment room at coastal resort, minimalist design, sea views, soft lighting, wellness atmosphere"
+                        loading="lazy" />
                 </div>
                 <div>
-                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4e6bf042ce-4dd3f29ab50dbb837519.png" alt="infinity pool overlooking Adriatic Sea, luxury resort, sunset lighting, modern architecture" />
+                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4e6bf042ce-4dd3f29ab50dbb837519.png" 
+                        alt="infinity pool overlooking Adriatic Sea, luxury resort, sunset lighting, modern architecture"
+                        loading="lazy" />
                 </div>
                 <div>
-                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5c34c3de83-59e6ac6ec6512edc882a.png" alt="yoga class on outdoor terrace with sea views, morning light, peaceful setting, luxury resort" />
+                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/5c34c3de83-59e6ac6ec6512edc882a.png" 
+                        alt="yoga class on outdoor terrace with sea views, morning light, peaceful setting, luxury resort"
+                        loading="lazy" />
                 </div>
                 <div>
-                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2b97ee7372-eab7121a2e1c8bf64c35.png" alt="elegant hotel suite with sea view balcony, modern luxury design, neutral tones" />
+                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2b97ee7372-eab7121a2e1c8bf64c35.png" 
+                        alt="elegant hotel suite with sea view balcony, modern luxury design, neutral tones"
+                        loading="lazy" />
                 </div>
                 <div>
-                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/335c4cc18e-844a9b5e72a71afc61eb.png" alt="gourmet healthy breakfast spread, Mediterranean cuisine, fresh ingredients, elegant presentation" />
+                    <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/335c4cc18e-844a9b5e72a71afc61eb.png" 
+                        alt="gourmet healthy breakfast spread, Mediterranean cuisine, fresh ingredients, elegant presentation"
+                        loading="lazy" />
                 </div>
             </div>
             
@@ -353,25 +372,37 @@
             
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d0b67aeaec-38e0ef10511e6e883886.png" alt="Trieste city center with historic architecture, Italian piazzas, coffee culture" />
+                    <img class="w-full h-48 object-cover rounded-lg mb-4" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d0b67aeaec-38e0ef10511e6e883886.png" 
+                        alt="Trieste city center with historic architecture, Italian piazzas, coffee culture"
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Trieste City</h3>
                     <p class="text-gray-600">15 minutes • Historic Habsburg architecture and famous coffee culture</p>
                 </div>
                 
                 <div class="text-center">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c525fab6c-1bbdb64d47ce10ced05d.png" alt="Miramare Castle on cliff overlooking Adriatic Sea, romantic setting, white castle" />
+                    <img class="w-full h-48 object-cover rounded-lg mb-4" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c525fab6c-1bbdb64d47ce10ced05d.png" 
+                        alt="Miramare Castle on cliff overlooking Adriatic Sea, romantic setting, white castle"
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Miramare Castle</h3>
                     <p class="text-gray-600">10 minutes • Romantic 19th-century castle with stunning gardens</p>
                 </div>
                 
                 <div class="text-center">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c4bf6dd287-0477459a8dddb729e27a.png" alt="Ljubljana Slovenia old town, baroque architecture, charming European city" />
+                    <img class="w-full h-48 object-cover rounded-lg mb-4" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/c4bf6dd287-0477459a8dddb729e27a.png" 
+                        alt="Ljubljana Slovenia old town, baroque architecture, charming European city"
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Ljubljana, Slovenia</h3>
                     <p class="text-gray-600">90 minutes • Charming capital perfect for day trips</p>
                 </div>
                 
                 <div class="text-center">
-                    <img class="w-full h-48 object-cover rounded-lg mb-4" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/28b694fdad-dd40e8bb46f14306cae0.png" alt="Karst region caves and vineyards, natural limestone formations, wine country" />
+                    <img class="w-full h-48 object-cover rounded-lg mb-4" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/28b694fdad-dd40e8bb46f14306cae0.png" 
+                        alt="Karst region caves and vineyards, natural limestone formations, wine country"
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Karst Region</h3>
                     <p class="text-gray-600">30 minutes • Famous caves and world-class wineries</p>
                 </div>
@@ -411,19 +442,27 @@
             <div class="flex justify-center space-x-4 mb-8">
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" alt="Italian villa courtyard with morning light" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
+                    alt="Italian villa courtyard with morning light"
+                    loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" alt="yoga class in Tuscan olive grove" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
+                    alt="yoga class in Tuscan olive grove"
+                    loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" alt="luxury spa treatment room in Italy" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
+                    alt="luxury spa treatment room in Italy"
+                    loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" alt="Italian countryside sunset view" />
+                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
+                    alt="Italian countryside sunset view"
+                    loading="lazy" />
                 </div>
             </div>
             <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -521,6 +560,11 @@
         </div>
     </div>
 
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -581,6 +625,5 @@
         document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
 
     </script>
-        <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>

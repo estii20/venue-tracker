@@ -47,15 +47,16 @@
       }
     }
     </script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
 
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -76,19 +77,23 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
-                    <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
-                    <a href="index.html#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
-                    <a href="index.html#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venues</a>
-                    <a href="index.html#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
-                    <a href="index.html#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
+                    <a href="#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
+                    <a href="#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venues</a>
+                    <a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
+                    <a href="#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer" aria-label="Visit the Italian Retreat Venues Blog">Blog</a>
                 </nav>
-                <button class="md:hidden" id="openMenu">
+                <button class="md:hidden" id="openMenu" aria-label="Open mobile menu">
                     <i class="fas fa-bars text-xl text-stone"></i>
                 </button>
             </div>
@@ -98,8 +103,9 @@
     <section id="hero" class="relative h-[500px] flex items-center justify-center overflow-hidden mt-20">
         <div class="absolute inset-0 z-0">
             <img class="w-full h-full object-cover" 
-            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2026026ed5-df89e8d5c6f7da9febc5.png" 
-            alt="Italian villa kitchen with fresh organic vegetables, natural lighting, rustic elegance" />
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/2026026ed5-df89e8d5c6f7da9febc5.png" 
+                alt="Italian villa kitchen with fresh organic vegetables, natural lighting, rustic elegance"
+                loading="lazy" />
             <div class="absolute inset-0 bg-black/40"></div>
         </div>
         
@@ -154,8 +160,9 @@
                             </div>
                             <div>
                                 <img class="w-full h-64 object-cover rounded-lg" 
-                                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4df9e11d7-9a41d07f57805d24dccc.png" 
-                                alt="Mediterranean ingredients spread on rustic wooden table, olive oil, fresh herbs, tomatoes" />
+                                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4df9e11d7-9a41d07f57805d24dccc.png" 
+                                    alt="Mediterranean ingredients spread on rustic wooden table, olive oil, fresh herbs, tomatoes"
+                                    loading="lazy" />
                             </div>
                         </div>
                     </div>
@@ -215,8 +222,9 @@
                                     </div>
                                     <div>
                                         <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d9131d3f98-26c1f34e374680193a55.png" 
-                                        alt="healthy breakfast spread on Italian terrace, fresh fruits, yogurt, granola, morning light" />
+                                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d9131d3f98-26c1f34e374680193a55.png" 
+                                            alt="healthy breakfast spread on Italian terrace, fresh fruits, yogurt, granola, morning light"
+                                            loading="lazy" />
                                         <h4 class="font-semibold text-lg text-stone mb-3">Dinner</h4>
                                         <ul class="text-gray-700 space-y-1">
                                             <li>• Vegetable minestrone soup</li>
@@ -259,8 +267,9 @@
                         <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                             <div class="text-center">
                                 <img class="w-full h-32 object-cover rounded-lg mb-3" 
-                                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/77543bab37-203169291b2b78530930.png" 
-                                alt="fresh basil leaves close-up, vibrant green, natural lighting" />
+                                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/77543bab37-203169291b2b78530930.png" 
+                                    alt="fresh basil leaves close-up, vibrant green, natural lighting"
+                                    loading="lazy" />
                                 <h4 class="font-semibold text-stone mb-2">Fresh Herbs</h4>
                                 <p class="text-gray-600 text-sm">Basil, oregano, rosemary for anti-inflammatory benefits</p>
                             </div>
@@ -272,13 +281,19 @@
                             </div>
                             
                             <div class="text-center">
-                                <img class="w-full h-32 object-cover rounded-lg mb-3" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/02c9922643-216e46a60a36e0c20199.png" alt="colorful heirloom tomatoes, various sizes, rustic wooden background" />
+                                <img class="w-full h-32 object-cover rounded-lg mb-3" 
+                                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/02c9922643-216e46a60a36e0c20199.png" 
+                                    alt="colorful heirloom tomatoes, various sizes, rustic wooden background"
+                                    loading="lazy" />
                                 <h4 class="font-semibold text-stone mb-2">San Marzano Tomatoes</h4>
                                 <p class="text-gray-600 text-sm">High in lycopene and natural sweetness</p>
                             </div>
                             
                             <div class="text-center">
-                                <img class="w-full h-32 object-cover rounded-lg mb-3" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/811743949a-d66bc84dc2271c480bc4.png" alt="fresh mozzarella di bufala, creamy white, artisanal presentation" />
+                                <img class="w-full h-32 object-cover rounded-lg mb-3" 
+                                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/811743949a-d66bc84dc2271c480bc4.png" 
+                                    alt="fresh mozzarella di bufala, creamy white, artisanal presentation"
+                                    loading="lazy" />
                                 <h4 class="font-semibold text-stone mb-2">Buffalo Mozzarella</h4>
                                 <p class="text-gray-600 text-sm">Protein-rich and easier to digest</p>
                             </div>
@@ -344,65 +359,6 @@
         </div>
     </section>
 
-    <section id="related-articles" class="py-16 bg-cream">
-        <div class="container mx-auto px-6">
-            <div class="max-w-6xl mx-auto">
-                <h2 class="font-playfair text-3xl font-semibold text-center text-stone mb-12">Related Articles</h2>
-                
-                <div class="grid md:grid-cols-3 gap-8">
-                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8b1d17b670-55f1424266022efb4a78.png" alt="Italian farmers market with fresh vegetables, vibrant colors, authentic atmosphere" />
-                        <div class="p-6">
-                            <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Local Sourcing</span>
-                            <h3 class="font-playfair text-xl font-semibold mt-3 mb-3 text-stone">Finding the Best Local Suppliers in Italy</h3>
-                            <p class="text-gray-600 text-sm">Connect with authentic Italian producers for your retreat menus.</p>
-                        </div>
-                    </article>
-                    
-                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/748b568143-46100f67bdf99671f505.png" alt="yoga practitioners eating mindfully outdoors, peaceful Italian setting" />
-                        <div class="p-6">
-                            <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Mindful Eating</span>
-                            <h3 class="font-playfair text-xl font-semibold mt-3 mb-3 text-stone">Incorporating Mindful Eating Practices</h3>
-                            <p class="text-gray-600 text-sm">Transform meals into meditation opportunities during your retreat.</p>
-                        </div>
-                    </article>
-                    
-                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/7b37fb5033-23f12d931046a1a58c28.png" alt="Italian cooking class in rustic kitchen, hands kneading dough, warm lighting" />
-                        <div class="p-6">
-                            <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Activities</span>
-                            <h3 class="font-playfair text-xl font-semibold mt-3 mb-3 text-stone">Adding Cooking Classes to Your Retreat</h3>
-                            <p class="text-gray-600 text-sm">Enhance your program with authentic Italian culinary experiences.</p>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </div>
-    </section>
-
-<section id="newsletter" class="py-20 bg-cream">
-    <div class="container mx-auto px-6">
-        <div class="text-center"> <h2 class="font-playfair text-4xl md:text-5xl font-bold text-stone mb-8">
-                Stay Inspired
-            </h2>
-            <p class="text-xl text-gray-600 mb-12">
-                Get monthly insights, venue spotlights, and retreat planning tips delivered to your inbox.
-            </p>
-            
-            <form class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-2xl mx-auto">
-                <div class="flex flex-col md:flex-row gap-4">
-                    <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-sage/50">
-                    <button type="submit" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300">
-                        Subscribe
-                    </button>
-                </div>
-                <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe anytime. Your privacy is protected.</p>
-            </form>
-        </div>
-    </div>
-</section>
-
     <footer id="footer" class="bg-stone text-cream py-12">
         <div class="container mx-auto px-6">
             <div class="max-w-6xl mx-auto">
@@ -457,6 +413,30 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="mobileMenu">
+        <div class="bg-white h-full w-64 p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
+                <button class="text-stone" id="closeMenu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>
+                <a href="#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -468,6 +448,11 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
                 }
             });
         });
@@ -484,17 +469,33 @@
             }
         });
 
-        // Article hover effects
-        document.querySelectorAll('article').forEach(article => {
-            article.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-4px)';
-            });
-            
-            article.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
+        // Mobile menu toggle
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        openMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
         });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside of it
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add event listeners for mobile menu links to close menu on click
+        document.getElementById('mobileAbout').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileHowItWorks').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
     </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
