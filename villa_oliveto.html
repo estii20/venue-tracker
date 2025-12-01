@@ -30,9 +30,6 @@
     <!-- Twitter Card -->
     <meta name="twitter:site" content="@ItalianRetreats">
     <meta name="twitter:creator" content="@ItalianRetreats">
-    
-    <!-- Canonical -->
-    <link rel="canonical" href="https://www.italianretreatvenues.com/villa_oliveto.html">
 
     <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
@@ -59,9 +56,12 @@
 
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
     
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -83,9 +83,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -113,7 +117,7 @@
     
     <div class="relative z-10 text-center text-white max-w-4xl px-6">
         <h1 class="font-playfair text-4xl md:text-6xl font-bold mb-4 leading-tight">
-            Villa Oliveto, Le Marche
+            Villa Oliveto
         </h1>
         <p class="text-xl md:text-2xl mb-2 font-light text-white">Hilltop Luxury Amidst Olive Groves</p>
         <p class="text-lg mb-8 text-white">Le Marche • Panoramic Views to the Adriatic Sea</p>
@@ -173,28 +177,33 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
                 <div class="md:col-span-2 lg:col-span-2">
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://dynamic-media.tacdn.com/media/vr-splice-j/07/c4/94/2d.jpg?w=800&h=-1" 
-                    alt="Luxury exterior of Villa Oliveto in Le Marche, surrounded by nature" />
+                        src="https://dynamic-media.tacdn.com/media/vr-splice-j/07/c4/94/2d.jpg?w=800&h=-1" 
+                        alt="Luxury exterior of Villa Oliveto in Le Marche, surrounded by nature" 
+                        loading="lazy" />
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://dynamic-media.tacdn.com/media/vr-splice-j/07/c4/94/35.jpg?w=800&h=800" 
-                    alt="Stunning infinity pool at Villa Oliveto overlooking the olive groves" />
+                        src="https://dynamic-media.tacdn.com/media/vr-splice-j/07/c4/94/35.jpg?w=800&h=800" 
+                        alt="Stunning infinity pool at Villa Oliveto overlooking the olive groves" 
+                        loading="lazy" />
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://dynamic-media.tacdn.com/media/vr-splice-j/07/e0/bf/71.jpg?w=800&h=800" 
-                    alt="Modern and elegant interior living room at Villa Oliveto" />
+                        src="https://dynamic-media.tacdn.com/media/vr-splice-j/07/e0/bf/71.jpg?w=800&h=800" 
+                        alt="Modern and elegant interior living room at Villa Oliveto" 
+                        loading="lazy" />
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://dynamic-media.tacdn.com/media/vr-splice-j/15/70/b7/d3.jpg?w=800&h=800" 
-                    alt="Bright and spacious yoga studio at Villa Oliveto, ideal for practice" />
+                        src="https://dynamic-media.tacdn.com/media/vr-splice-j/15/70/b7/d3.jpg?w=800&h=800" 
+                        alt="Bright and spacious yoga studio at Villa Oliveto, ideal for practice" 
+                        loading="lazy" />
                 </div>
                 <div>
                     <img class="w-full h-80 object-cover rounded-lg shadow-lg" 
-                    src="https://dynamic-media.tacdn.com/media/vr-splice-j/15/70/b7/c0.jpg?w=800&h=800" 
-                    alt="Inviting outdoor dining area at Villa Oliveto, perfect for al fresco meals" />
+                        src="https://dynamic-media.tacdn.com/media/vr-splice-j/15/70/b7/c0.jpg?w=800&h=800" 
+                        alt="Inviting outdoor dining area at Villa Oliveto, perfect for al fresco meals" 
+                        loading="lazy" />
                 </div>
             </div>
             
@@ -379,32 +388,36 @@
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://www.turismovieste.it/index/wp-content/uploads/2020/05/Untitled-design-95.jpg" 
-                    alt="Scenic Adriatic coastline of Le Marche with clear blue water and sandy beaches" />
+                        src="https://www.turismovieste.it/index/wp-content/uploads/2020/05/Untitled-design-95.jpg" 
+                        alt="Scenic Adriatic coastline of Le Marche with clear blue water and sandy beaches" 
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Adriatic Coast & Beaches</h3>
                     <p class="text-gray-600">10-15 min drive • Discover charming seaside towns and pristine beaches perfect for relaxation.</p>
                 </div>
                 
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://letsmarche.it/documents/20121/77833/macerata.jpg/5b3f5209-d6cc-2542-4196-53f6c6fa9688?t=1687176080525" 
-                    alt="Historic center of Macerata, Le Marche, with ancient buildings and a vibrant piazza" />
+                        src="https://letsmarche.it/documents/20121/77833/macerata.jpg/5b3f5209-d6cc-2542-4196-53f6c6fa9688?t=1687176080525" 
+                        alt="Historic center of Macerata, Le Marche, with ancient buildings and a vibrant piazza" 
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Macerata</h3>
                     <p class="text-gray-600">~25 min drive • A picturesque hilltop city, home to a renowned opera festival and medieval architecture.</p>
                 </div>
                 
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://tourismmedia.italia.it/is/image/mitur/20210518135122-gettyimages-1209711229-1?wid=2160&hei=1320&fit=constrain,1&fmt=webp" 
-                    alt="Stunning coastline and cliffs of the Conero Riviera natural park in Le Marche" />
+                        src="https://tourismmedia.italia.it/is/image/mitur/20210518135122-gettyimages-1209711229-1?wid=2160&hei=1320&fit=constrain,1&fmt=webp" 
+                        alt="Stunning coastline and cliffs of the Conero Riviera natural park in Le Marche" 
+                        loading="lazy" />
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Conero Riviera & Park</h3>
                     <p class="text-gray-600">~45 min drive • Explore breathtaking white cliffs, secluded coves, and hiking trails in this natural paradise.</p>
                 </div>
                 
                 <div class="text-center">
                     <img class="w-full h-48 object-cover rounded-lg mb-4" 
-                    src="https://tourismmedia.italia.it/is/image/mitur/20210331153057-enit-raffaello-palazzodicaleurbino?wid=3200&hei=800&fit=vfit,1&fmt=webp" 
-                    alt="Piazza del Popolo in Ascoli Piceno, known for its beautiful travertine stone architecture" />
+                        src="https://tourismmedia.italia.it/is/image/mitur/20210331153057-enit-raffaello-palazzodicaleurbino?wid=3200&hei=800&fit=vfit,1&fmt=webp" 
+                        alt="Piazza del Popolo in Ascoli Piceno, known for its beautiful travertine stone architecture" 
+                        loading="lazy" />   
                     <h3 class="font-playfair text-lg font-semibold mb-2 text-stone">Ascoli Piceno</h3>
                     <p class="text-gray-600">~1 hour drive • A magnificent city celebrated for its stunning travertine architecture and vibrant piazza.</p>
                 </div>
@@ -444,23 +457,27 @@
             <div class="flex justify-center space-x-4 mb-8">
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
-                    alt="Italian villa courtyard with morning light" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/8c3a930431-6684aa64fce71e753364.png" 
+                        alt="Italian villa courtyard with morning light" 
+                        loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
-                    alt="yoga class in Tuscan olive grove" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/b5bb083ad1-ee404bdc640bcc7a1547.png" 
+                        alt="yoga class in Tuscan olive grove" 
+                        loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
-                    alt="luxury spa treatment room in Italy" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/82bb260f92-e748b6d0b626ee0a6563.png" 
+                        alt="luxury spa treatment room in Italy" 
+                        loading="lazy" />
                 </div>
                 <div class="w-24 h-24 bg-gray-200 rounded-lg">
                     <img class="w-full h-full object-cover rounded-lg" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
-                    alt="Italian countryside sunset view" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/1a13c7ae73-091727f8aa9ffc91f19d.png" 
+                        alt="Italian countryside sunset view" 
+                        loading="lazy" />       
                 </div>
             </div>
             <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer">
@@ -544,7 +561,7 @@
         <div class="bg-white h-full w-64 p-6 shadow-lg">
             <div class="flex justify-between items-center mb-8">
                 <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
-                <button class="text-stone" id="closeMenu">
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
                     <i class="fas fa-times text-xl"></i>
                 </button>
             </div>
@@ -558,6 +575,11 @@
         </div>
     </div>
 
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -616,9 +638,7 @@
         document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
         document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
         document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
-
     </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
     <script>
         const watchTourBtn = document.getElementById('watchTourBtn');
         const videoModal = document.getElementById('videoModal');

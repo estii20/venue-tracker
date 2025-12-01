@@ -40,15 +40,15 @@
       "url": "https://italianretreatvenues.com/venue_selection.html"
     }
     </script>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
 
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style">
+    
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
     <style>
         ::-webkit-scrollbar { display: none; }
         .font-playfair { font-family: 'Playfair Display', serif; }
@@ -70,9 +70,13 @@
             <div class="flex items-center justify-between">
                 <div class="font-playfair text-2xl font-semibold text-stone">
                     <a href="index.html">
-                    <img src="images/italian_retreat_venues_logo.png" alt="Italian Retreat Venues Logo"
-                     width="100" height="200"
-                    aria-hidden="true"></a> 
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
@@ -94,8 +98,9 @@
     <section id="hero" class="relative h-[500px] flex items-center justify-center overflow-hidden mt-20">
         <div class="absolute inset-0 z-0">
             <img class="w-full h-full object-cover" 
-            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/183bc9a669-e5b9094b7390e3ac1a9c.png" 
-            alt="luxury Italian villa terrace with checklist and planning documents, Tuscan countryside view, golden hour lighting, elegant styling" />
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/183bc9a669-e5b9094b7390e3ac1a9c.png" 
+                alt="luxury Italian villa terrace with checklist and planning documents, Tuscan countryside view, golden hour lighting, elegant styling"
+                loading="lazy" />
             <div class="absolute inset-0 bg-black/50"></div>
         </div>
         
@@ -155,7 +160,10 @@
                     
                     <div class="grid md:grid-cols-2 gap-8 mb-8">
                         <div>
-                            <img class="w-full h-64 object-cover rounded-lg mb-6" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/34fbd57681-9f6b7597fa41d46839f9.png" alt="elegant planning workspace with Italian maps, venue brochures, calendar, and coffee, natural lighting" />
+                            <img class="w-full h-64 object-cover rounded-lg mb-6" 
+                                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/34fbd57681-9f6b7597fa41d46839f9.png" 
+                                alt="elegant planning workspace with Italian maps, venue brochures, calendar, and coffee, natural lighting"
+                                loading="lazy" />   
                             
                             <h3 class="font-playfair text-xl font-semibold text-stone mb-4">Define Your Vision</h3>
                             <ul class="space-y-3 text-gray-700">
@@ -183,7 +191,10 @@
                 <section id="eight-months-before" class="mb-12">
                     <h2 class="font-playfair text-3xl font-bold text-stone mb-8">8-10 Months Before: Venue Selection</h2>
                     
-                    <img class="w-full h-80 object-cover rounded-lg mb-8" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d56f6147f6-2eeabbfebf1c16303e23.png" alt="luxury Italian retreat venue comparison photos on tablet, villa exteriors, yoga studios, accommodation rooms" />
+                    <img class="w-full h-80 object-cover rounded-lg mb-8" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/d56f6147f6-2eeabbfebf1c16303e23.png" 
+                        alt="luxury Italian retreat venue comparison photos on tablet, villa exteriors, yoga studios, accommodation rooms"
+                        loading="lazy" />       
                     
                     <div class="bg-cream p-8 rounded-lg mb-8">
                         <h3 class="font-playfair text-2xl font-semibold text-stone mb-6">Venue Evaluation Checklist</h3>
@@ -257,8 +268,9 @@
                     <h2 class="font-playfair text-3xl font-bold text-stone mb-8">3 Months Before: Logistics & Details</h2>
                     
                     <img class="w-full h-64 object-cover rounded-lg mb-8" 
-                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/cc9ae9d776-209d6422ec9ae6185ca0.png" 
-                    alt="organized retreat planning documents, travel itineraries, yoga equipment checklist, Italian villa background" />
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/cc9ae9d776-209d6422ec9ae6185ca0.png" 
+                        alt="organized retreat planning documents, travel itineraries, yoga equipment checklist, Italian villa background"
+                        loading="lazy" />           
                     
                     <div class="bg-stone/10 p-8 rounded-lg mb-8">
                         <h3 class="font-playfair text-xl font-semibold text-stone mb-6">Travel & Transportation</h3>
@@ -316,7 +328,10 @@
                 <section id="day-of-arrival" class="mb-12">
                     <h2 class="font-playfair text-3xl font-bold text-stone mb-8">Day of Arrival: Smooth Transitions</h2>
                     
-                    <img class="w-full h-64 object-cover rounded-lg mb-8" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0a9a2ce547-337641c35059e2623834.png" alt="welcoming Italian villa entrance with retreat leader greeting guests, golden hour lighting, warm atmosphere" />
+                    <img class="w-full h-64 object-cover rounded-lg mb-8" 
+                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/0a9a2ce547-337641c35059e2623834.png" 
+                        alt="welcoming Italian villa entrance with retreat leader greeting guests, golden hour lighting, warm atmosphere"
+                        loading="lazy" />               
                     
                     <div class="bg-sage/10 p-8 rounded-lg">
                         <h3 class="font-playfair text-xl font-semibold text-stone mb-6">Welcome Day Timeline</h3>
@@ -412,64 +427,50 @@
                 
                 <div class="grid md:grid-cols-3 gap-8">
                     <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b2d1a5f06-7b02efa2124596abc655.png" alt="luxury yoga studio in Friuli region Italy, mountain backdrop, elegant interior design" />
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/4b2d1a5f06-7b02efa2124596abc655.png" 
+                            alt="luxury yoga studio in Friuli region Italy, mountain backdrop, elegant interior design"
+                            loading="lazy" />   
                         <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Venue Guide</span>
                             </div>
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Top 5 Yoga-Friendly Venues in Friuli-Venezia Giulia</h3>
-                            <a href="top_five_destinations.html"><span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span></a>
-                        </div>
-                    </article>
-
-                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
-                        <img class="w-full h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4b21f9fb8-22966b285b841e659f8b.png" alt="retreat planning checklist on elegant desk, Italian villa background, professional styling" />
-                        <div class="p-6">
-                            <div class="flex items-center mb-3">
-                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Planning Guide</span>
-                            </div>
-                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">What to Look for in a Retreat Venue</h3>
-                            <a href="venue_selection.html"><span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span></a>
+                            <a href="top_five_destinations.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span></a>
                         </div>
                     </article>
 
                     <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
                         <img class="w-full h-48 object-cover" 
-                        src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9d9a8d51cd-b4cdaa8e59b0ea7e1097.png" 
-                        alt="Italian wellness retreat breakfast table, healthy organic food, natural lighting" />
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/f4b21f9fb8-22966b285b841e659f8b.png" 
+                            alt="retreat planning checklist on elegant desk, Italian villa background, professional styling"
+                            loading="lazy" />       
+                        <div class="p-6">
+                            <div class="flex items-center mb-3">
+                                <span class="bg-stone text-white px-3 py-1 rounded-full text-sm font-medium">Planning Guide</span>
+                            </div>
+                            <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">What to Look for in a Retreat Venue</h3>
+                            <a href="venue_selection.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span></a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-all duration-300">
+                        <img class="w-full h-48 object-cover" 
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/9d9a8d51cd-b4cdaa8e59b0ea7e1097.png" 
+                            alt="Italian wellness retreat breakfast table, healthy organic food, natural lighting"
+                            loading="lazy" />
                         <div class="p-6">
                             <div class="flex items-center mb-3">
                                 <span class="bg-sage text-white px-3 py-1 rounded-full text-sm font-medium">Nutrition</span>
                             </div>
                             <h3 class="font-playfair text-xl font-semibold mb-3 text-stone">Creating Nourishing Retreat Menus in Italy</h3>
-                            <a href="retreat_menus.html"><span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span></a>
+                            <a href="retreat_menus.html">
+                                <span class="text-sage hover:text-sage/80 font-medium cursor-pointer">Read More →</span></a>
                         </div>
                     </article>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Newsletter Signup -->
-
-    <section id="newsletter" class="py-20 bg-cream">
-        <div class="container mx-auto px-6">
-            <div class="text-center"> <h2 class="font-playfair text-4xl md:text-5xl font-bold text-stone mb-8">
-                    Stay Inspired
-                </h2>
-                <p class="text-xl text-gray-600 mb-12">
-                    Get weekly insights, venue spotlights, and retreat planning tips delivered to your inbox.
-                </p>
-                
-                <form class="bg-white rounded-lg shadow-lg p-8 md:p-12 max-w-2xl mx-auto">
-                    <div class="flex flex-col md:flex-row gap-4">
-                        <input type="email" placeholder="Your email address" class="flex-1 px-6 py-4 border border-gray-200 rounded-full focus:outline-none focus:ring-2 focus:ring-sage/50">
-                        <button type="submit" class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full font-medium transition-all duration-300">
-                            Subscribe
-                        </button>
-                    </div>
-                    <p class="text-sm text-gray-500 mt-4">No spam, unsubscribe anytime. Your privacy is protected.</p>
-                </form>
             </div>
         </div>
     </section>
@@ -530,6 +531,29 @@
         </div>
     </footer>
 
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="mobileMenu">
+        <div class="bg-white h-full w-64 p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
+                <a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>
+                <a href="#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -541,6 +565,11 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
                 }
             });
         });
@@ -557,17 +586,33 @@
             }
         });
 
-        // Article hover effects
-        document.querySelectorAll('article').forEach(article => {
-            article.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-4px)';
-            });
-            
-            article.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
+        // Mobile menu toggle
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        openMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
         });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside of it
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add event listeners for mobile menu links to close menu on click
+        document.getElementById('mobileAbout').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileHowItWorks').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
     </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
