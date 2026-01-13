@@ -82,10 +82,9 @@
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
                     <a href="index.html#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
                     <a href="index.html#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">
-  Venue Curation
-</a>
-
-                    <a href="index.html#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
+                    Venue Curation
+                    </a>
+                    <!--<a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>-->
                     <a href="index.html#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
                     <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
                 </nav>
@@ -370,7 +369,7 @@
                         <h4 class="font-semibold mb-4">Blog Categories</h4>
                         <ul class="space-y-2 text-sm opacity-75">
                             <a href="destinations.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Destination Guides</span></li></a>
-                            <a href="venues.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Venue Reviews</span></li></a>
+                            <li><a href="index.html#venues" class="hover:text-sage transition-colors cursor-pointer">Venues</a></li>
                             <a href="planning.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Planning Tips</span></li></a>
                             <a href="affiliate.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Recommendations</span></li></a>
                         </ul>
@@ -381,7 +380,7 @@
                         <ul class="space-y-2 text-sm opacity-75">
                             <a href="index.html#how-it-works"><li><span class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</span></li></a>     
                             <a href="planning.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</span></li></a> 
-                            <a href="setup.html"><li><span class="hover:text-sage transition-colors cursor-pointer">Commission Setup</span></li></a>
+                            <!--<li><a href="setup.html" class="hover:text-sage transition-colors cursor-pointer">Commission Setup</a></li>-->
                         </ul>
                     </div>
                     
@@ -407,6 +406,24 @@
             </div>
         </div>
     </footer>
+
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="mobileMenu">
+        <div class="bg-white h-full w-64 p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
+                <button class="text-stone" id="closeMenu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="index.html#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
+                <!-- <a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a> -->    
+                <a href="#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+            </nav>
+        </div>
+    </div>
 
     <script src="https://cdn.tailwindcss.com" defer></script>
     <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>

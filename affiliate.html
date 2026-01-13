@@ -67,10 +67,9 @@
                     <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
                     <a href="index.html#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
                     <a href="index.html#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">
-  Venue Curation
-</a>
-
-                    <a href="index.html#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>
+                    Venue Curation
+                    </a>
+                    <!--<a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>-->
                     <a href="index.html#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
                     <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
                 </nav>
@@ -184,15 +183,148 @@
     </div>
 </section>
 
-<!-- Footer -->
-<footer class="bg-stone text-cream py-12">
-    <div class="container mx-auto px-6 text-center">
-        <p class="text-sm opacity-75">© 2026 Italian Retreat Venues. All rights reserved.</p>
+    <footer id="footer" class="bg-stone text-cream py-12">
+        <div class="container mx-auto px-6">
+            <div class="max-w-6xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div>
+                        <div class="font-playfair text-2xl font-semibold mb-4">Italian Retreat Venues</div>
+                        <p class="text-sm opacity-90 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
+                        <div class="flex space-x-4">
+                            <a href="https://www.instagram.com/italian_retreat_venues/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            </a>
+                            <a href="mailto:helloretreatmatcher@gmail.com" aria-label="Email Us">
+                                <i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Blog Categories</h4>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="destinations.html" class="hover:text-sage transition-colors cursor-pointer">Destination Guides</a></li>
+                            <li><a href="index.html#venues" class="hover:text-sage transition-colors cursor-pointer">Venue Curation</a></li>
+                            <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Planning Tips</a></li>
+                            <li><a href="affiliate.html" class="hover:text-sage transition-colors cursor-pointer">Recommendations</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Services</h4>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li><a href="index.html#how-it-works" class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</a></li>     
+                            <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</a></li> 
+                            <li><a href="setup.html" class="hover:text-sage transition-colors cursor-pointer">Commission Setup</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-semibold mb-4">Contact</h4>
+                        <ul class="space-y-2 text-sm opacity-90">
+                            <li>Based in Monfalcone, Italy</li>
+                            <li><a href="mailto:helloretreatmatcher@gmail.com" class="hover:text-sage transition-colors cursor-pointer">helloretreatmatcher@gmail.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="border-t border-cream/20 pt-8 text-center">
+                    <p class="text-sm opacity-90">© 2026 Italian Retreat Venues. All rights reserved.
+                    </p>
+                    <p class="text-sm opacity-90">Designed by 
+                            <a href="https://www.pixelperfect-ux.store/" 
+                                target="_blank" 
+                                rel="noopener noreferrer" 
+                                class="hover:text-white">PixelPerfect UX
+                            </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="mobileMenu">
+        <div class="bg-white h-full w-64 p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="index.html#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venues</a>
+                <!--<a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>-->
+                <a href="#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+            </nav>
+        </div>
     </div>
-</footer>
 
-<script src="https://cdn.tailwindcss.com" defer></script>
-<script async src="https://tally.so/widgets/embed.js"></script>
+    <script src="https://cdn.tailwindcss.com" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+    
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
 
+        // Header background on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.getElementById('header');
+            if (window.scrollY > 100) {
+                header.classList.add('bg-white');
+                header.classList.remove('bg-white/90');
+            } else {
+                header.classList.add('bg-white/90');
+                header.classList.remove('bg-white');
+            }
+        });
+
+        // Mobile menu toggle
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        openMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
+        });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside of it
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add event listeners for mobile menu links to close menu on click
+        document.getElementById('mobileAbout').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileHowItWorks').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
+    </script>
 </body>
 </html>
