@@ -80,14 +80,12 @@
                 </div>
                 <nav class="hidden md:flex space-x-8">
                     <a href="index.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Home</a>
-                    <a href="index.html#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
-                    <a href="index.html#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
-                    <a href="index.html#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">
-                    Venue Curation
-                    </a>
+                    <a href="#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
+                    <a href="#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venue Curation</a>
                     <!--<a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>-->
-                    <a href="index.html#contact" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
-                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Blog</a>
+                    <a href="index.html#footer" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer" aria-label="Visit the Italian Retreat Venues Blog">Blog</a>
                 </nav>
                 <button class="md:hidden" id="openMenu">
                     <i class="fas fa-bars text-xl text-stone"></i>
@@ -422,7 +420,8 @@
                 <a href="index.html#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
                 <a href="index.html#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venue Curation</a> 
                 <!--<a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>-->
-                <a href="index.html#contact" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>
+                <a href="index.html#footer" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>   
+                <a href="blog.html" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileBlog">Blog</a>
             </nav>
         </div>
     </div>
@@ -431,7 +430,7 @@
     <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
     <script async src="https://tally.so/widgets/embed.js"></script>
-
+    
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -443,6 +442,11 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+                // Close mobile menu if open
+                const mobileMenu = document.getElementById('mobileMenu');
+                if (!mobileMenu.classList.contains('hidden')) {
+                    mobileMenu.classList.add('hidden');
                 }
             });
         });
@@ -459,17 +463,33 @@
             }
         });
 
-        // Article hover effects
-        document.querySelectorAll('article').forEach(article => {
-            article.addEventListener('mouseenter', function() {
-                this.style.transform = 'translateY(-4px)';
-            });
-            
-            article.addEventListener('mouseleave', function() {
-                this.style.transform = 'translateY(0)';
-            });
+        // Mobile menu toggle
+        const openMenuBtn = document.getElementById('openMenu');
+        const closeMenuBtn = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        openMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('hidden');
         });
+
+        closeMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside of it
+        mobileMenu.addEventListener('click', (e) => {
+            if (e.target === mobileMenu) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Add event listeners for mobile menu links to close menu on click
+        document.getElementById('mobileAbout').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileHowItWorks').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileVenues').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileTestimonials').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        document.getElementById('mobileContact').addEventListener('click', () => mobileMenu.classList.add('hidden'));
+
     </script>
-    <script async src="https://tally.so/widgets/embed.js"></script>
 </body>
 </html>
