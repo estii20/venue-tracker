@@ -76,6 +76,35 @@
     </style>
 </head>
 <body class="font-inter text-gray-800">
+      <header id="header" class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="font-playfair text-2xl font-semibold text-stone">
+                    <a href="index.html">
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
+                    <a href="#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venue Curation</a>
+                    <!--<a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>-->
+                    <a href="index.html#footer" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer" aria-label="Visit the Italian Retreat Venues Blog">Blog</a>
+                </nav>
+                <button class="md:hidden" id="openMenu" aria-label="Open mobile menu">
+                    <i class="fas fa-bars text-xl text-stone"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
   <section class="py-20 bg-cream">
   <div class="max-w-3xl mx-auto px-6 text-center">
     <h1 class="font-playfair text-4xl md:text-5xl text-stone mb-6">
@@ -107,3 +136,107 @@
     </a>
   </div>
 </section>
+
+<section id="blog" class="pt-20 pb-12 bg-cream">
+        <div class="container mx-auto px-6 text-center">
+          <h2 class="text-3xl md:text-4xl font-bold text-stone mb-4">Retreat Planning Resources</h2>
+          <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
+            Guides, venue checklists, and affiliate tips to help you plan the perfect retreat.
+          </p>
+          <a href="blog.html" aria-label="Explore the Retreat Planning Blog">
+            <button class="bg-stone hover:bg-stone/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300">
+              <i class="fa-solid fa-book-open mr-2" aria-hidden="true"></i> Explore the Blog
+            </button>
+          </a>
+        </div>
+      </section>
+      
+    <footer id="footer" class="bg-stone text-cream py-12">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="grid md:grid-cols-4 gap-8 mb-8">
+                        <div>
+                            <div class="font-playfair text-2xl font-semibold mb-4">Italian Retreat Venues</div>
+                            <p class="text-sm opacity-90 mb-4">Curating luxury retreat venues across Italy for UK wellness professionals.</p>
+                            <div class="flex space-x-4">
+                                <a href="https://www.instagram.com/italian_retreat_yoga_venues" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                    <i class="fab fa-instagram text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                                </a>
+                                <a href="mailto:helloretreatmatcher@gmail.com" aria-label="Email Us">
+                                    <i class="fas fa-envelope text-xl hover:text-sage transition-colors cursor-pointer"></i>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-4">Blog Categories</h4>
+                            <ul class="space-y-2 text-sm opacity-90">
+                                <li><a href="destinations.html" class="hover:text-sage transition-colors cursor-pointer">Destination Guides</a></li>
+                                <li><a href="index.html#venues" class="hover:text-sage transition-colors cursor-pointer">Venues</a></li>
+                                <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Planning Tips</a></li>
+                                <li><a href="affiliate.html" class="hover:text-sage transition-colors cursor-pointer">Recommendations</a></li>
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-4">Services</h4>
+                            <ul class="space-y-2 text-sm opacity-90">
+                                <li><a href="index.html#how-it-works" class="hover:text-sage transition-colors cursor-pointer">Venue Sourcing</a></li>     
+                                <li><a href="planning.html" class="hover:text-sage transition-colors cursor-pointer">Retreat Planning</a></li> 
+                                <!--<li><a href="setup.html" class="hover:text-sage transition-colors cursor-pointer">Commission Setup</a></li>-->
+                            </ul>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-semibold mb-4">Contact</h4>
+                            <ul class="space-y-2 text-sm opacity-90">
+                                <li>Based in Monfalcone, Italy</li>
+                                <li class="break-words">
+                                    <a href="mailto:helloretreatmatcher@gmail.com" class="hover:text-sage transition-colors">
+                                        helloretreatmatcher@gmail.com
+                                    </a>
+                                </li>
+                        </div>
+                    </div>
+                    
+                    <div class="border-t border-cream/20 pt-8 text-center">
+                        <p class="text-sm opacity-90">© 2026 Italian Retreat Venues. All rights reserved.
+                        </p>
+                        <p class="text-sm opacity-90">Designed by 
+                                <a href="https://www.pixelperfect-ux.store/" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer" 
+                                    class="hover:text-white">PixelPerfect UX
+                                </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </footer>
+
+    <div class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden" id="mobileMenu">
+        <div class="bg-white h-full w-64 p-6 shadow-lg">
+            <div class="flex justify-between items-center mb-8">
+                <div class="font-playfair text-2xl font-semibold text-stone">Menu</div>
+                <button class="text-stone" id="closeMenu" aria-label="Close mobile menu">
+                    <i class="fas fa-times text-xl"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col space-y-4">
+                <a href="index.html" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHome">Home</a>
+                <a href="index.html#about" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileAbout">About</a>
+                <a href="index.html#how-it-works" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileHowItWorks">How It Works</a>
+                <a href="index.html#venues" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileVenues">Venue Curation</a> 
+                <!--<a href="#testimonials" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileTestimonials">Testimonials</a>-->
+                <a href="index.html#footer" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileContact">Contact</a>   
+                <a href="blog.html" class="text-gray-800 hover:text-sage transition-colors cursor-pointer text-lg" id="mobileBlog">Blog</a>
+            </nav>
+        </div>
+    </div>
+
+    <script src="/js/main.js" defer></script>
+    <script>window.FontAwesomeConfig = {autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <script async src="https://tally.so/widgets/embed.js"></script>
+</body>
+</html>
