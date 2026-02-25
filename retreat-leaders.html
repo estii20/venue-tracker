@@ -30,74 +30,93 @@
     </style>
 </head>
 <body class="font-inter text-gray-800 bg-white">
-
+  
     <header id="header" class="fixed top-0 w-full bg-white/90 backdrop-blur-md z-50 border-b border-gray-100">
-        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="index.html" class="hover:opacity-80 transition-opacity">
-                <img src="images/italian_retreat_venues_logo.png" alt="Logo" width="100" height="40">
-            </a> 
-            
-            <nav class="hidden md:flex space-x-8 font-medium text-sm tracking-wide">
-                <a href="index.html" class="text-gray-600 hover:text-sage transition-colors">Home</a>
-                <a href="#about" class="text-gray-600 hover:text-sage transition-colors">About</a>
-                <a href="#how-it-works" class="text-gray-600 hover:text-sage transition-colors">How It Works</a>
-                <a href="#venues" class="text-gray-600 hover:text-sage transition-colors">Venue Curation</a>
-                <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors">Blog</a>
-            </nav>
-
-            <button class="md:hidden text-stone" id="openMenu" aria-label="Open mobile menu">
-                <i class="fas fa-bars text-2xl"></i>
-            </button>
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="font-playfair text-2xl font-semibold text-stone">
+                    <a href="index.html">
+                        <img 
+                            src="images/italian_retreat_venues_logo.png" 
+                            alt="Italian Retreat Venues Logo - Home Link"
+                            width="100" 
+                            height="40"
+                            loading="lazy">
+                    </a> 
+                </div>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Home</a>
+                    <a href="#about" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">About</a>
+                    <a href="#how-it-works" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">How It Works</a>
+                    <a href="#venues" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Venue Curation</a>
+                    <!--<a href="#testimonials" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Testimonials</a>-->
+                    <a href="index.html#footer" class="text-gray-600 hover:text-sage transition-colors cursor-pointer">Contact</a>
+                    <a href="blog.html" class="text-gray-600 hover:text-sage transition-colors cursor-pointer" aria-label="Visit the Italian Retreat Venues Blog">Blog</a>
+                </nav>
+                <button class="md:hidden" id="openMenu" aria-label="Open mobile menu">
+                    <i class="fas fa-bars text-xl text-stone"></i>
+                </button>
+            </div>
         </div>
     </header>
 
-    <section id="hero" class="relative min-h-[85vh] md:h-[800px] flex items-center justify-center overflow-hidden">
+    <section id="hero" class="relative h-[800px] flex items-center justify-center overflow-hidden">
         <div class="absolute inset-0 z-0">
-            <img class="w-full h-full object-cover" src="images/hero.png" alt="Serene luxury villa in Tuscany" fetchpriority="high"> 
-            <div class="absolute inset-0 hero-softener"></div>
+            <img 
+                class="w-full h-full object-cover" 
+                src="images/hero.png" 
+                alt="serene luxury villa in Tuscany with olive groves, golden hour lighting, minimalist architecture"
+                width="1920" 
+                height="1080" 
+                fetchpriority="high" /> 
+            <div class="absolute inset-0 bg-black/30"></div>
         </div>
         
-        <div class="relative z-10 text-center text-white max-w-5xl px-6 pt-20">
-            <h1 class="font-playfair text-4xl md:text-6xl lg:text-7xl font-bold mb-8 leading-tight">
-                Thinking about hosting a retreat in Italy — one day?
+        <div class="relative z-10 text-center text-white max-w-4xl px-6">
+            <h1 class="font-playfair text-5xl md:text-7xl font-bold mb-6 leading-tight">
+                Retreat Venues in Italy
+                <span class="block text-3xl md:text-4xl font-light mt-4">
+                    Carefully connecting retreat leaders with distinctive Italian spaces — 
+                    rooted in nature, design and authenticity.
+                </span>
             </h1>
-            <p class="font-light text-xl md:text-2xl mb-10 max-w-3xl mx-auto leading-relaxed opacity-90">
-                Italian Retreat Venues is a curated discovery project connecting retreat leaders with distinctive, authentic venues across Italy.
-            </p>
             <button 
-                data-tally-open="81xrBA" 
-                class="bg-sage hover:bg-sage/90 text-white px-10 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105 shadow-xl"
-            >
-                Share your retreat vision
-            </button>
+            data-tally-open="3x8L9G" 
+            data-tally-emoji-text="👋" 
+            data-tally-emoji-animation="wave"
+            class="bg-sage hover:bg-sage/90 text-white px-8 py-4 rounded-full text-lg font-medium transition-all duration-300 transform hover:scale-105"
+          >
+            Find Your Perfect Venue
+          </button>
+          
         </div>
     </section>
 
-<section id="about" class="py-24 bg-cream">
-    <div class="container mx-auto px-6">
-        <div class="max-w-3xl mx-auto bg-white rounded-2xl p-10 md:p-16 shadow-sm border border-stone/10">
-            <p class="text-lg text-gray-700 mb-6 leading-relaxed italic">
-                "I’m currently exploring how international yoga and wellness teachers imagine retreats in Italy — from the kind of setting they’re drawn to, to the group size and pace they prefer."
-            </p>
-            <div class="space-y-4 text-gray-600 mb-10">
-                <p>There’s no commitment here. Filling in the form doesn’t mean you’re booking a retreat or joining a mailing list.</p>
-                <p>It simply helps me build something thoughtful, aligned, and respectful — for both teachers and venues.</p>
-            </div>
+    <section id="about" class="py-24 bg-cream">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl mx-auto bg-white rounded-2xl p-10 md:p-16 shadow-sm border border-stone/10">
+                <p class="text-lg text-gray-700 mb-6 leading-relaxed italic">
+                    "I’m currently exploring how international yoga and wellness teachers imagine retreats in Italy — from the kind of setting they’re drawn to, to the group size and pace they prefer."
+                </p>
+                <div class="space-y-4 text-gray-600 mb-10">
+                    <p>There’s no commitment here. Filling in the form doesn’t mean you’re booking a retreat or joining a mailing list.</p>
+                    <p>It simply helps me build something thoughtful, aligned, and respectful — for both teachers and venues.</p>
+                </div>
 
-            <div class="flex items-center space-x-4 pt-6 border-t border-stone/10">
-                <img 
-                    src="images/estelle_specht_venue_finder.png" 
-                    alt="Estelle Specht" 
-                    class="w-16 h-16 rounded-full object-cover border-2 border-sage/20 shadow-sm"
-                >
-                <div>
-                    <p class="font-playfair italic text-2xl text-stone leading-none mb-1">Estelle Specht</p>
-                    <p class="text-xs uppercase tracking-widest text-gray-400 font-medium">Founder & Venue Finder</p>
+                <div class="flex items-center space-x-4 pt-6 border-t border-stone/10">
+                    <img 
+                        src="images/estelle_specht_venue_finder.png" 
+                        alt="Estelle Specht" 
+                        class="w-16 h-16 rounded-full object-cover border-2 border-sage/20 shadow-sm"
+                    >
+                    <div>
+                        <p class="font-playfair italic text-2xl text-stone leading-none mb-1">Estelle Specht</p>
+                        <p class="text-xs uppercase tracking-widest text-gray-400 font-medium">Founder & Venue Finder</p>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <footer id="footer" class="bg-stone text-cream py-12">
             <div class="container mx-auto px-6">
